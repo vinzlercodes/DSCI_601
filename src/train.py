@@ -44,4 +44,4 @@ if __name__ == "__main__":
         print(x['classifierName'],x['classifier'])
         classifierChain = ClassifierChain(x['classifier'])
         train_and_pickle(classifierChain,x['classifierName'],X_train,y_train)
-    print((time.time()-start)/60 , 'mins')
+        print((time.time()-start)/60 , 'mins')
