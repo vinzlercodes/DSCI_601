@@ -14,9 +14,8 @@ class DataPreparation:
 
     def __init__(self, dataFrame):
         """
-
-
-        :param dataFrame:
+        The method initialises the variables and the data frame and the other parameters that will be utilised.
+        :param dataFrame: the raw dataset 'FR-dataset'
         """
         self.dataFrame = dataFrame
         self.classes = None
@@ -50,25 +49,30 @@ class DataPreparation:
 
     def labelBinarizer(self, df):
         """
-
-        :param df:
-        :return:
+        The function converts the multilabel problem into binary classification across multiple classes.
+        The dataset classes are converted into unique columns and their presence values are encoded by 0 or 1.
+        :param df: the cleaned and lemmatized dataframe
+        :return tempdf: a further preprocessed dataframe with dummy variables
         """
         mlb = MultiLabelBinarizer()
+        # select the 'labels' column for dummy creation
         tempdf = pd.DataFrame(columns=['labels'])
         for i in df:
             temp = []
             try:
+                # separating the classes by whitespace
                 i = i.replace(' ', '')
+                # separating each class entry using ',' delimeter
                 for j in i.split(','):
                     if j != '':
                         temp.append(j.strip())
             except:
                 pass
             tempdf = tempdf.append(pd.DataFrame({'labels': [temp]}))
-
+        # storing the classes for each entry in tuples
         tempdf.apply(lambda x: tuple(x.values))
         mlb.fit(tempdf['labels'])
+        # creating the dummy variables for each unique class
         tempdf = mlb.transform(tempdf['labels'])
         tempdf = pd.DataFrame(tempdf, columns=list(mlb.classes_))
         return tempdf
@@ -79,7 +83,7 @@ class DataPreparation:
         a weight importance value to a particular word in the list and
         that will help with highlighting certain syntax words or indicative words
         that will help with refactoring label prediction
-        :param df:this is the pandas data frame use it with text column to apply TfidfVectorizer
+        :param df:this is the pandas data frame use it with text column to apply Tfidf Vectorizer
         :return:thus will return x as Vectorized text
         """
         v = TfidfVectorizer(max_features=1000)
@@ -89,10 +93,12 @@ class DataPreparation:
 
     def concatnate(self, x, df):
         """
+        This function cleans the 'text' column and then replaces the values with the vectorized text for better
+        class to input correlation
 
-        :param x:
-        :param df:
-        :return:
+        :param x: vectorized dataframe 'text' column
+        :param df: the cleaned and dataframe in use
+        :return df: preprocessed dataframe with vectorized 'text' column
         """
         df.dropna(subset=["Text"], inplace=True)
         df = df.drop(columns=['ID', 'Class'])
@@ -103,9 +109,13 @@ class DataPreparation:
 
     def split(self, df):
         """
+        The preprocessed dataset is taken and split into the testing set and training set, X_train is the features
+        that will be fed into the model and y_train are what it should predict based on those inputs (learning). X_test
+        will be the unseen data input which the model will make predictions on and y_test will be used to compare the
+        results and accuracy of predictions.
 
-        :param df:
-        :return:
+        :param df: the preprocessed and cleaned dataset
+        :return: X-train, Y-Train, X-test, y-Test
         """
         columns = list(df.columns)
         X_train, X_test, y_train, y_test = train_test_split(df[columns[:-4]], df[columns[-4:]], test_size=0.25,
