@@ -41,13 +41,7 @@ The dataset for the project is curated towards the identification of refactoring
 * Multi Nomial Naive Bayes (MNB)
 
 
-
-## Results
-
-
-
-
-
 ## How to Run
 * Clone the project
+git clone https://github.com/vinzlercodes/DSCI_601.git
 * Run the test.py file to see the predicted result based on pickled train models.
