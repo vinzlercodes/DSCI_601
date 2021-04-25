@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="split function for test and train files">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataPreparation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataPreparation.py" afterDir="false" />
-    </list>
+    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="data labelization" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,21 +46,7 @@
       <option name="project" value="LOCAL" />
       <updated>1619318993941</updated>
     </task>
-    <task id="LOCAL-00002" summary="concatenation function">
-      <created>1619319192758</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1619319192758</updated>
-    </task>
-    <task id="LOCAL-00003" summary="split function for test and train files">
-      <created>1619319375503</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1619319375503</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,8 +65,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="data labelization" />
-    <MESSAGE value="concatenation function" />
-    <MESSAGE value="split function for test and train files" />
-    <option name="LAST_COMMIT_MESSAGE" value="split function for test and train files" />
+    <option name="LAST_COMMIT_MESSAGE" value="data labelization" />
   </component>
 </project>

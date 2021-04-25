@@ -108,5 +108,3 @@ class DataPreparation:
         y_train.to_csv(r'../Data/Train_Labels.csv')
         X_test.to_csv(r'../Data/Test_Features.csv')
         y_test.to_csv(r'../Data/Test_Labels.csv')
-
-
