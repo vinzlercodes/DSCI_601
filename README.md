@@ -4,11 +4,12 @@ This repository is for the course Applied Data Science 1, for its final project 
 
 # Description
 
-Title - Recommendation of Refactoring Techniques to address Self-AdmittedTechnical Debt
+Title: **Recommendation of Refactoring Techniques to address Self-Admitted Technical Debt**
 
-Authors - Abdullah A AlsalehData (aa6304@rit.edu)
-          Vinayak Sengupta vs4016@rit.edu)
-          Mohamed Wiem Mkaouer - Project Advisor (mwmvse@rit.edu)
+Authors: 
+* Abdullah A AlsalehData (aa6304@rit.edu)
+* Vinayak Sengupta vs4016@rit.edu)
+* Mohamed Wiem Mkaouer - Project Advisor (mwmvse@rit.edu)
 
 
 ## Requirements
