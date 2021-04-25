@@ -67,3 +67,14 @@ class DataPreparation:
         tempdf = pd.DataFrame(tempdf, columns=list(mlb.classes_))
         return tempdf
 
+    def Vectorization(self, df):
+        """Documentation for a function.
+
+        More details.
+        """
+
+        v = TfidfVectorizer(max_features=1000)
+        x = v.fit_transform(df['Text'])
+
+        return x,v
+
