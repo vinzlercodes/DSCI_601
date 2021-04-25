@@ -1,13 +1,12 @@
 import pickle
-import numpy as np
 import pandas as pd
 import time
 from sklearn.metrics import classification_report
 from skmultilearn.problem_transform import ClassifierChain
 from sklearn.naive_bayes import MultinomialNB
-from sklearn.linear_model import SGDClassifier,LogisticRegression
+from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
-from sklearn import tree, svm
+from sklearn import svm
 
 def train_and_pickle(model,name,X_train,y_train):
     """
