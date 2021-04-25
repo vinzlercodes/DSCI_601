@@ -20,7 +20,7 @@ def train_and_pickle(model, name, X_train, y_train):
     :param name: the classifier name
     :param X_train: The training inputs (the feature texts)
     :param y_train: The expected training outputs (the refactoring labels)
-    :return: The training time for each model along with its training accuracy and model performance.
+    :return: The training time for each model along with its training accuracy.
     """
     model.fit(X_train, y_train)
     y_pred = model.predict(X_train)

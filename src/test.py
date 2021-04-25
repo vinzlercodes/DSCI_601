@@ -25,8 +25,9 @@ def unpickle_and_test(name,X_test,y_test):
 
 if __name__ == '__main__':
     """
-      main method to use the split train data set and send it to train_and_pickle method with ml classifiers
-      to be trained and generate  the classification_report and lastly pickle the model
+      main method to use the split test data set and send it to def unpickle_and_test method with 
+      the pickled trained models, to unpickle the models and use the trained models to try and predict unseen
+      data and lastly generate the classification_report for the performance of the models 
       """
 
     # Load data
