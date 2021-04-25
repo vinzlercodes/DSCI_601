@@ -29,10 +29,6 @@ The goal of the project is to support software developers in improving the quali
 
 The dataset for the project is curated towards the identification of refactoring labels for a given SATD/Non-SATD statement. The main columns of the data are the ‘Class’ and the ‘Text’ columns containing the refactoring labels and the refactoring needing comments, respectively. We will be working with 4 unique refactoring label clases. The dataset of 4009 rows with a unique instance of comments for each corresponding label. Hence, we have 2 learnable parameters to account for.  
 
-## Useful Insights
-
-Given below are some facts about the data that we have gained with EDA to help develop a robust model around it:
-
 * The frequency of each class occuring:
 
 ![Class Frequency](https://user-images.githubusercontent.com/34100245/116001557-fe159d80-a5c2-11eb-8e95-9b6be15dcfb9.png)
