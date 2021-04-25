@@ -7,22 +7,22 @@ This repository is for the course Applied Data Science 1, for its final project 
 
 # Requirements
 
-*Python3
-*numpy
-*pandas
-*pickle
-*sklearn
-*nltk
+* Python3
+* numpy
+* pandas
+* pickle
+* sklearn
+* nltk
 
 ## Dataset
 
 
 
 ## Models used
-*Random Forest Classifier
-*LogisticRegression
-*Support Vector Machine (SVM)
-*Multi Nomail Naive Bayes (MNB)
+* Random Forest Classifier
+* LogisticRegression
+* Support Vector Machine (SVM)
+* Multi Nomail Naive Bayes (MNB)
 
 
 
