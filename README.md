@@ -8,18 +8,18 @@ Title: **Recommendation of Refactoring Techniques to address Self-Admitted Techn
 
 Authors: 
 * Abdullah A AlsalehData (aa6304@rit.edu)
-* Vinayak Sengupta vs4016@rit.edu)
+* Vinayak Sengupta (vs4016@rit.edu)
 * Mohamed Wiem Mkaouer - Project Advisor (mwmvse@rit.edu)
 
 
 ## Requirements
 
-* Python3 (3.8)
+* Python 3 (3.8)
 * numpy (1.18.5)
 * pandas (1.0.5)
 * pickle ( 0.7.5)
-* sklearn (0.23.1)
-* nltk (3.5)
+* scikit-learn (0.23.1)
+* natural language tool kit (3.5)
 
 ## Dataset
 
