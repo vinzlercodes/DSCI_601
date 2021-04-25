@@ -108,3 +108,27 @@ class DataPreparation:
         y_train.to_csv(r'../Data/Train_Labels.csv')
         X_test.to_csv(r'../Data/Test_Features.csv')
         y_test.to_csv(r'../Data/Test_Labels.csv')
+
+    def __call__(self):
+        """
+        :return:
+        """
+        self.dataFrame.dropna(subset=["Text"], inplace=True)
+        self.dataFrame = self.dataFrame.drop_duplicates(subset=['Text'])
+        self.classes = self.labelBinarizer(self.dataFrame['Class'])
+        self.dataFrame = self.dataFrame.reset_index(drop=True)
+        self.dataFrame = pd.concat([self.dataFrame, self.classes], axis=1)
+        self.dataFrame.to_csv("../Data/Preprocessed.csv")
+        vectorOfFeatures,self.vectorzier = self.Vectorization(self.dataFrame)
+        self.dataFrame = self.concatnate(vectorOfFeatures,self.dataFrame)
+        self.X_train,self.X_test,self.y_train,self.y_test = self.split(self.dataFrame)
+
+
+if __name__ == "__main__":
+    start = time.time()
+    # Load data
+    data = pd.read_csv(r'C:\Users\GEM001\Downloads\FR-Dataset.csv')
+    dataprep = DataPreparation(data)
+    dataprep()
+
+
