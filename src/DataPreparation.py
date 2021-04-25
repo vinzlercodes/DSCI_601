@@ -1,3 +1,5 @@
+__authors__ = 'Abdullah + Vinayak'
+
 import pandas as pd
 import time
 from nltk.corpus import stopwords
@@ -12,6 +14,7 @@ class DataPreparation:
     def __init__(self,dataFrame):
         """
 
+
         :param dataFrame:
         """
         self.dataFrame = dataFrame
@@ -24,9 +27,11 @@ class DataPreparation:
 
     def preprocess(self, x):
         """
-
-        :param x:this bbjbjfjknhjh
-        :return:khjhjhjjj
+        This function responsible of preprocess for the Text column starting by removing the stop word
+        and using lemmatization technique from nltk library , also remove punctuation and the comma
+        and quotation marks
+        :param x: x here is  the text column in the dataset , this param uses for applying the preprocess steps
+        :return: this will return the column after been preprocessed  or return empty if there is an error
         """
         try:
             stop_words = stopwords.words('english')
@@ -68,15 +73,18 @@ class DataPreparation:
         return tempdf
 
     def Vectorization(self, df):
-        """Documentation for a function.
-
-        More details.
         """
-
+        This function applied Vectorization using TF-IDF  here for each word cell to achieve
+        a weight importance value to a particular word in the list and
+        that will help with highlighting certain syntax words or indicative words
+        that will help with refactoring label prediction
+        :param df:this is the pandas data frame use it with text column to apply TfidfVectorizer
+        :return:thus will return x as Vectorized text
+        """
         v = TfidfVectorizer(max_features=1000)
         x = v.fit_transform(df['Text'])
 
-        return x,v
+        return x
 
     def concatnate(self, x, df):
         """
@@ -89,6 +97,7 @@ class DataPreparation:
         df = df.drop(columns=['ID', 'Class'])
         df['Text'] = df['Text'].apply(self.preprocess)
         df = pd.concat([pd.DataFrame(x.toarray()), df], axis=1)
+        print(df)
 
         return df
 
@@ -111,23 +120,33 @@ class DataPreparation:
 
     def __call__(self):
         """
+        The __call__ method used here to turn the instances
+        of the class into callables. where here the instances behave like
+        functions and can be called like a function to be implemented.
         :return:
         """
+        #this line will drop the null values of text column
         self.dataFrame.dropna(subset=["Text"], inplace=True)
+        #here to drop dublicate values of text column
         self.dataFrame = self.dataFrame.drop_duplicates(subset=['Text'])
+        #implement labelBinarizer function
         self.classes = self.labelBinarizer(self.dataFrame['Class'])
+        #this will rest the index before concatnate the data
         self.dataFrame = self.dataFrame.reset_index(drop=True)
         self.dataFrame = pd.concat([self.dataFrame, self.classes], axis=1)
+        #saved the Preprocessed data
         self.dataFrame.to_csv("../Data/Preprocessed.csv")
+        #apply Vectorization tfidf functiom and concatnate the data
         vectorOfFeatures,self.vectorzier = self.Vectorization(self.dataFrame)
         self.dataFrame = self.concatnate(vectorOfFeatures,self.dataFrame)
+        #split the data set
         self.X_train,self.X_test,self.y_train,self.y_test = self.split(self.dataFrame)
 
 
 if __name__ == "__main__":
     start = time.time()
     # Load data
-    data = pd.read_csv(r'C:\Users\GEM001\Downloads\FR-Dataset.csv')
+    data = pd.read_csv(r'../Data/FR-Dataset.csv')
     dataprep = DataPreparation(data)
     dataprep()
 

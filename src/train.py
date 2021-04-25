@@ -1,3 +1,5 @@
+__authors__ = 'Abdullah + Vinayak'
+
 import pickle
 import pandas as pd
 import time
@@ -25,13 +27,19 @@ def train_and_pickle(model,name,X_train,y_train):
         pickle.dump(model, f)
 
 if __name__ == "__main__":
+    """
+    main method to use the splited train data set and send it to train_and_pickle method with ml classifiers
+    to be trained and generate  the classification_report and lastly pickle the model
+    """
     start = time.time()
     # Load data
     X_train = pd.read_csv(r'../Data/Train_Features.csv',index_col=0)
     y_train = pd.read_csv(r'../Data/Train_Labels.csv',index_col=0)
+    # perapare the classifiers with their parameters to be send to train_and_pickle
     classifiers = [{'classifierName':'RandomForest','classifier':RandomForestClassifier(class_weight='balanced')}
         , {'classifierName':'MNB','classifier':MultinomialNB()},{'classifierName':'SVM','classifier':svm.SVC()},
                    {'classifierName':'LR','classifier':LogisticRegression()}]
+    #send the classifiers one by one usinf for loop
     for x in classifiers:
         print(x['classifierName'],x['classifier'])
         classifierChain = ClassifierChain(x['classifier'])
