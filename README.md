@@ -11,6 +11,10 @@ Authors:
 * Vinayak Sengupta (vs4016@rit.edu)
 * Mohamed Wiem Mkaouer - Project Advisor (mwmvse@rit.edu)
 
+About:
+
+The goal of the project is to support software developers in improving the quality of their code by the recommendation of the appropriate refactoring strategies to address Self-Admitted Technical Debt (SATD). To do so, we are designing and implementing a recommendation model that takes as input of existing SATD comments, and recommends the appropriate refactoring operations that needs to be performed as part of addressing the debt in the comment. Along with that we are also going to be classifying among which SATD comments is refactoring even required.
+
 
 ## Requirements
 
@@ -26,9 +30,9 @@ Authors:
 
 ## Models used
 * Random Forest Classifier
-* LogisticRegression
+* Logistic Regression
 * Support Vector Machine (SVM)
-* Multi Nomail Naive Bayes (MNB)
+* Multi Nomial Naive Bayes (MNB)
 
 
 
