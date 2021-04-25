@@ -24,6 +24,10 @@ def unpickle_and_test(name,X_test,y_test):
     print(classification_report(y_pred,y_test))
 
 if __name__ == '__main__':
+    """
+      main method to use the split train data set and send it to train_and_pickle method with ml classifiers
+      to be trained and generate  the classification_report and lastly pickle the model
+      """
 
     # Load data
     X_test = pd.read_csv(r'../Data/Test_Features.csv',index_col=0)

@@ -9,9 +9,10 @@ from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
 
+
 class DataPreparation:
 
-    def __init__(self,dataFrame):
+    def __init__(self, dataFrame):
         """
 
 
@@ -84,7 +85,7 @@ class DataPreparation:
         v = TfidfVectorizer(max_features=1000)
         x = v.fit_transform(df['Text'])
 
-        return x,v
+        return x, v
 
     def concatnate(self, x, df):
         """
@@ -125,22 +126,23 @@ class DataPreparation:
         functions and can be called like a function to be implemented.
         :return:
         """
-        #this line will drop the null values of text column
+        # this line will drop the null values of text column
         self.dataFrame.dropna(subset=["Text"], inplace=True)
-        #here to drop dublicate values of text column
+        # here to drop duplicate values of text column
         self.dataFrame = self.dataFrame.drop_duplicates(subset=['Text'])
-        #implement labelBinarizer function
+        # implement labelBinarizer function
         self.classes = self.labelBinarizer(self.dataFrame['Class'])
-        #this will rest the index before concatnate the data
+        # this will rest the index before concatnate the data
         self.dataFrame = self.dataFrame.reset_index(drop=True)
         self.dataFrame = pd.concat([self.dataFrame, self.classes], axis=1)
-        #saved the Preprocessed data
+        # saved the Preprocessed data
         self.dataFrame.to_csv("../Data/Preprocessed.csv")
-        #apply Vectorization tfidf functiom and concatnate the data
-        vectorOfFeatures,self.vectorzier = self.Vectorization(self.dataFrame)
-        self.dataFrame = self.concatnate(vectorOfFeatures,self.dataFrame)
-        #split the data set
-        self.X_train,self.X_test,self.y_train,self.y_test = self.split(self.dataFrame)
+        # apply Vectorization tfidf function and concatenate the data
+        vectorOfFeatures, self.vectorzier = self.Vectorization(self.dataFrame)
+        self.dataFrame = self.concatnate(vectorOfFeatures, self.dataFrame)
+        # split the data set
+        self.X_train, self.X_test, self.y_train, self.y_test = self.split(self.dataFrame)
+
 
 if __name__ == "__main__":
     start = time.time()
@@ -149,5 +151,3 @@ if __name__ == "__main__":
     dataprep = DataPreparation(data)
     dataprep()
     print('The data is ready')
-
-
