@@ -1,0 +1,175 @@
+\hypertarget{class_data_preparation_1_1_data_preparation}{}\doxysection{Data\+Preparation.\+Data\+Preparation Class Reference}
+\label{class_data_preparation_1_1_data_preparation}\index{DataPreparation.DataPreparation@{DataPreparation.DataPreparation}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_data_preparation_1_1_data_preparation_ac6285f21ad98fa9757ba1493a95d564f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{class_data_preparation_1_1_data_preparation_aaa1dc3d5df6f7876cc178787333263ec}{data\+Frame}})
+\item 
+def \mbox{\hyperlink{class_data_preparation_1_1_data_preparation_ab4a4aef637c3aaf7fa64ade53a5fbb0e}{preprocess}} (self, x)
+\item 
+def \mbox{\hyperlink{class_data_preparation_1_1_data_preparation_a9b48921ca421a157bc11ce417e1bdd3e}{label\+Binarizer}} (self, df)
+\item 
+def \mbox{\hyperlink{class_data_preparation_1_1_data_preparation_a8f70a47d3eb26eb130627a8149a04cc4}{Vectorization}} (self, df)
+\item 
+def \mbox{\hyperlink{class_data_preparation_1_1_data_preparation_a02aea6885e69dfb5c5c6b0e755bbab7d}{concatnate}} (self, x, df)
+\item 
+def \mbox{\hyperlink{class_data_preparation_1_1_data_preparation_a3a443f6c61d8daffba11c4052a4516cf}{split}} (self, df)
+\item 
+def \mbox{\hyperlink{class_data_preparation_1_1_data_preparation_a45438564d384934433ffefb3643a01d7}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_data_preparation_1_1_data_preparation_aaa1dc3d5df6f7876cc178787333263ec}{data\+Frame}}
+\item 
+\mbox{\hyperlink{class_data_preparation_1_1_data_preparation_a727014ffbcb5ad249690a2f9be3d4a9b}{classes}}
+\item 
+\mbox{\hyperlink{class_data_preparation_1_1_data_preparation_a61cae87adfbb6909fc0659cf84bb9143}{vectorzier}}
+\item 
+\mbox{\hyperlink{class_data_preparation_1_1_data_preparation_a7dca56a22ed23788b4fadc6be9e2e771}{X\+\_\+train}}
+\item 
+\mbox{\hyperlink{class_data_preparation_1_1_data_preparation_aa93c33384385a3a9e7a60a7593af0290}{y\+\_\+train}}
+\item 
+\mbox{\hyperlink{class_data_preparation_1_1_data_preparation_a56e1ce33a5de7157909de05ef301c21c}{X\+\_\+test}}
+\item 
+\mbox{\hyperlink{class_data_preparation_1_1_data_preparation_a28eb8a3c8023515532ee5e2db18e6a7d}{y\+\_\+test}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_data_preparation_1_1_data_preparation_ac6285f21ad98fa9757ba1493a95d564f}\label{class_data_preparation_1_1_data_preparation_ac6285f21ad98fa9757ba1493a95d564f}} 
+\index{DataPreparation.DataPreparation@{DataPreparation.DataPreparation}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!DataPreparation.DataPreparation@{DataPreparation.DataPreparation}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def Data\+Preparation.\+Data\+Preparation.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data\+Frame }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The method initialises the variables and the data frame and the other parameters that will be utilised.
+:param dataFrame: the raw dataset 'FR-dataset'
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_data_preparation_1_1_data_preparation_a45438564d384934433ffefb3643a01d7}\label{class_data_preparation_1_1_data_preparation_a45438564d384934433ffefb3643a01d7}} 
+\index{DataPreparation.DataPreparation@{DataPreparation.DataPreparation}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!DataPreparation.DataPreparation@{DataPreparation.DataPreparation}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily def Data\+Preparation.\+Data\+Preparation.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The __call__ method used here to turn the instances
+of the class into callables. where here the instances behave like
+functions and can be called like a function to be implemented.
+:return:
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_data_preparation_1_1_data_preparation_a02aea6885e69dfb5c5c6b0e755bbab7d}\label{class_data_preparation_1_1_data_preparation_a02aea6885e69dfb5c5c6b0e755bbab7d}} 
+\index{DataPreparation.DataPreparation@{DataPreparation.DataPreparation}!concatnate@{concatnate}}
+\index{concatnate@{concatnate}!DataPreparation.DataPreparation@{DataPreparation.DataPreparation}}
+\doxysubsubsection{\texorpdfstring{concatnate()}{concatnate()}}
+{\footnotesize\ttfamily def Data\+Preparation.\+Data\+Preparation.\+concatnate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x,  }\item[{}]{df }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function cleans the 'text' column and then replaces the values with the vectorized text for better
+class to input correlation
+
+:param x: vectorized dataframe 'text' column
+:param df: the cleaned and dataframe in use
+:return df: preprocessed dataframe with vectorized 'text' column
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_data_preparation_1_1_data_preparation_a9b48921ca421a157bc11ce417e1bdd3e}\label{class_data_preparation_1_1_data_preparation_a9b48921ca421a157bc11ce417e1bdd3e}} 
+\index{DataPreparation.DataPreparation@{DataPreparation.DataPreparation}!labelBinarizer@{labelBinarizer}}
+\index{labelBinarizer@{labelBinarizer}!DataPreparation.DataPreparation@{DataPreparation.DataPreparation}}
+\doxysubsubsection{\texorpdfstring{labelBinarizer()}{labelBinarizer()}}
+{\footnotesize\ttfamily def Data\+Preparation.\+Data\+Preparation.\+label\+Binarizer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{df }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The function converts the multilabel problem into binary classification across multiple classes.
+The dataset classes are converted into unique columns and their presence values are encoded by 0 or 1.
+:param df: the cleaned and lemmatized dataframe
+:return tempdf: a further preprocessed dataframe with dummy variables
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_data_preparation_1_1_data_preparation_ab4a4aef637c3aaf7fa64ade53a5fbb0e}\label{class_data_preparation_1_1_data_preparation_ab4a4aef637c3aaf7fa64ade53a5fbb0e}} 
+\index{DataPreparation.DataPreparation@{DataPreparation.DataPreparation}!preprocess@{preprocess}}
+\index{preprocess@{preprocess}!DataPreparation.DataPreparation@{DataPreparation.DataPreparation}}
+\doxysubsubsection{\texorpdfstring{preprocess()}{preprocess()}}
+{\footnotesize\ttfamily def Data\+Preparation.\+Data\+Preparation.\+preprocess (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function responsible of preprocess for the Text column starting by removing the stop word
+and using lemmatization technique from nltk library , also remove punctuation and the comma
+and quotation marks
+:param x: x here is  the text column in the dataset , this param uses for applying the preprocess steps
+:return: this will return the column after been preprocessed  or return empty if there is an error
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_data_preparation_1_1_data_preparation_a3a443f6c61d8daffba11c4052a4516cf}\label{class_data_preparation_1_1_data_preparation_a3a443f6c61d8daffba11c4052a4516cf}} 
+\index{DataPreparation.DataPreparation@{DataPreparation.DataPreparation}!split@{split}}
+\index{split@{split}!DataPreparation.DataPreparation@{DataPreparation.DataPreparation}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily def Data\+Preparation.\+Data\+Preparation.\+split (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{df }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The preprocessed dataset is taken and split into the testing set and training set, X_train is the features
+that will be fed into the model and y_train are what it should predict based on those inputs (learning). X_test
+will be the unseen data input which the model will make predictions on and y_test will be used to compare the
+results and accuracy of predictions.
+
+:param df: the preprocessed and cleaned dataset
+:return: X-train, Y-Train, X-test, y-Test
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_data_preparation_1_1_data_preparation_a8f70a47d3eb26eb130627a8149a04cc4}\label{class_data_preparation_1_1_data_preparation_a8f70a47d3eb26eb130627a8149a04cc4}} 
+\index{DataPreparation.DataPreparation@{DataPreparation.DataPreparation}!Vectorization@{Vectorization}}
+\index{Vectorization@{Vectorization}!DataPreparation.DataPreparation@{DataPreparation.DataPreparation}}
+\doxysubsubsection{\texorpdfstring{Vectorization()}{Vectorization()}}
+{\footnotesize\ttfamily def Data\+Preparation.\+Data\+Preparation.\+Vectorization (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{df }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function applied Vectorization using TF-IDF  here for each word cell to achieve
+a weight importance value to a particular word in the list and
+that will help with highlighting certain syntax words or indicative words
+that will help with refactoring label prediction
+:param df:this is the pandas data frame use it with text column to apply Tfidf Vectorizer
+:return:thus will return x as Vectorized text
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_data_preparation_1_1_data_preparation_a727014ffbcb5ad249690a2f9be3d4a9b}\label{class_data_preparation_1_1_data_preparation_a727014ffbcb5ad249690a2f9be3d4a9b}} 
+\index{DataPreparation.DataPreparation@{DataPreparation.DataPreparation}!classes@{classes}}
+\index{classes@{classes}!DataPreparation.DataPreparation@{DataPreparation.DataPreparation}}
+\doxysubsubsection{\texorpdfstring{classes}{classes}}
+{\footnotesize\ttfamily Data\+Preparation.\+Data\+Preparation.\+classes}
+
+\mbox{\Hypertarget{class_data_preparation_1_1_data_preparation_aaa1dc3d5df6f7876cc178787333263ec}\label{class_data_preparation_1_1_data_preparation_aaa1dc3d5df6f7876cc178787333263ec}} 
+\index{DataPreparation.DataPreparation@{DataPreparation.DataPreparation}!dataFrame@{dataFrame}}
+\index{dataFrame@{dataFrame}!DataPreparation.DataPreparation@{DataPreparation.DataPreparation}}
+\doxysubsubsection{\texorpdfstring{dataFrame}{dataFrame}}
+{\footnotesize\ttfamily Data\+Preparation.\+Data\+Preparation.\+data\+Frame}
+
+\mbox{\Hypertarget{class_data_preparation_1_1_data_preparation_a61cae87adfbb6909fc0659cf84bb9143}\label{class_data_preparation_1_1_data_preparation_a61cae87adfbb6909fc0659cf84bb9143}} 
+\index{DataPreparation.DataPreparation@{DataPreparation.DataPreparation}!vectorzier@{vectorzier}}
+\index{vectorzier@{vectorzier}!DataPreparation.DataPreparation@{DataPreparation.DataPreparation}}
+\doxysubsubsection{\texorpdfstring{vectorzier}{vectorzier}}
+{\footnotesize\ttfamily Data\+Preparation.\+Data\+Preparation.\+vectorzier}
+
+\mbox{\Hypertarget{class_data_preparation_1_1_data_preparation_a56e1ce33a5de7157909de05ef301c21c}\label{class_data_preparation_1_1_data_preparation_a56e1ce33a5de7157909de05ef301c21c}} 
+\index{DataPreparation.DataPreparation@{DataPreparation.DataPreparation}!X\_test@{X\_test}}
+\index{X\_test@{X\_test}!DataPreparation.DataPreparation@{DataPreparation.DataPreparation}}
+\doxysubsubsection{\texorpdfstring{X\_test}{X\_test}}
+{\footnotesize\ttfamily Data\+Preparation.\+Data\+Preparation.\+X\+\_\+test}
+
+\mbox{\Hypertarget{class_data_preparation_1_1_data_preparation_a7dca56a22ed23788b4fadc6be9e2e771}\label{class_data_preparation_1_1_data_preparation_a7dca56a22ed23788b4fadc6be9e2e771}} 
+\index{DataPreparation.DataPreparation@{DataPreparation.DataPreparation}!X\_train@{X\_train}}
+\index{X\_train@{X\_train}!DataPreparation.DataPreparation@{DataPreparation.DataPreparation}}
+\doxysubsubsection{\texorpdfstring{X\_train}{X\_train}}
+{\footnotesize\ttfamily Data\+Preparation.\+Data\+Preparation.\+X\+\_\+train}
+
+\mbox{\Hypertarget{class_data_preparation_1_1_data_preparation_a28eb8a3c8023515532ee5e2db18e6a7d}\label{class_data_preparation_1_1_data_preparation_a28eb8a3c8023515532ee5e2db18e6a7d}} 
+\index{DataPreparation.DataPreparation@{DataPreparation.DataPreparation}!y\_test@{y\_test}}
+\index{y\_test@{y\_test}!DataPreparation.DataPreparation@{DataPreparation.DataPreparation}}
+\doxysubsubsection{\texorpdfstring{y\_test}{y\_test}}
+{\footnotesize\ttfamily Data\+Preparation.\+Data\+Preparation.\+y\+\_\+test}
+
+\mbox{\Hypertarget{class_data_preparation_1_1_data_preparation_aa93c33384385a3a9e7a60a7593af0290}\label{class_data_preparation_1_1_data_preparation_aa93c33384385a3a9e7a60a7593af0290}} 
+\index{DataPreparation.DataPreparation@{DataPreparation.DataPreparation}!y\_train@{y\_train}}
+\index{y\_train@{y\_train}!DataPreparation.DataPreparation@{DataPreparation.DataPreparation}}
+\doxysubsubsection{\texorpdfstring{y\_train}{y\_train}}
+{\footnotesize\ttfamily Data\+Preparation.\+Data\+Preparation.\+y\+\_\+train}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_data_preparation_8py}{Data\+Preparation.\+py}}\end{DoxyCompactItemize}
