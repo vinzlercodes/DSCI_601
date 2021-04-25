@@ -78,3 +78,16 @@ class DataPreparation:
 
         return x,v
 
+    def concatnate(self, x, df):
+        """
+
+        :param x:
+        :param df:
+        :return:
+        """
+        df.dropna(subset=["Text"], inplace=True)
+        df = df.drop(columns=['ID', 'Class'])
+        df['Text'] = df['Text'].apply(self.preprocess)
+        df = pd.concat([pd.DataFrame(x.toarray()), df], axis=1)
+
+        return df
