@@ -8,11 +8,11 @@ This repository is for the course Applied Data Science 1, for its final project 
 ## Requirements
 
 * Python3
-* numpy
-* pandas
-* pickle
-* sklearn
-* nltk
+* numpy (1.18.5)
+* pandas (1.0.5)
+* pickle ( 0.7.5)
+* sklearn (0.23.1)
+* nltk (3.5)
 
 ## Dataset
 
