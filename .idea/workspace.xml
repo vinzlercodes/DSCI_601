@@ -20,6 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="data labelization">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/RandomForest.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/models/RandomForest.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataPreparation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataPreparation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +54,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.DataPreparation">
     <configuration name="DataPreparation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DSCI_601" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -73,9 +76,53 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DSCI_601" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DSCI_601" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.DataPreparation" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.train" />
       </list>
     </recent_temporary>
   </component>
@@ -128,22 +175,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="163" y="0" key="#Project_Structure/0.0.1366.768@0.0.1366.768" timestamp="1619323116592" />
-    <state width="1323" height="372" key="GridCell.Tab.0.bottom" timestamp="1619330399905">
+    <state width="1323" height="139" key="GridCell.Tab.0.bottom" timestamp="1619331271630">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="372" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1619330399905" />
-    <state width="1323" height="372" key="GridCell.Tab.0.center" timestamp="1619330399905">
+    <state width="1323" height="139" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1619331271630" />
+    <state width="1323" height="139" key="GridCell.Tab.0.center" timestamp="1619331271630">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="372" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1619330399905" />
-    <state width="1323" height="372" key="GridCell.Tab.0.left" timestamp="1619330399905">
+    <state width="1323" height="139" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1619331271630" />
+    <state width="1323" height="139" key="GridCell.Tab.0.left" timestamp="1619331271630">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="372" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1619330399905" />
-    <state width="1323" height="372" key="GridCell.Tab.0.right" timestamp="1619330399905">
+    <state width="1323" height="139" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1619331271630" />
+    <state width="1323" height="139" key="GridCell.Tab.0.right" timestamp="1619331271630">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="372" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1619330399905" />
+    <state width="1323" height="139" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1619331271630" />
     <state x="283" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1619329868623">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
