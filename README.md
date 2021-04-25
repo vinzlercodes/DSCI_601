@@ -7,7 +7,7 @@ This repository is for the course Applied Data Science 1, for its final project 
 
 ## Requirements
 
-* Python3
+* Python3 (3.8)
 * numpy (1.18.5)
 * pandas (1.0.5)
 * pickle ( 0.7.5)
