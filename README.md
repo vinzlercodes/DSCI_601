@@ -27,6 +27,7 @@ The goal of the project is to support software developers in improving the quali
 
 ## Dataset
 
+The dataset for the project is curated towards the identification of refactoring labels for a given SATD/Non-SATD statement. The main columns of the data are the ‘Class’ and the ‘Text’ columns containing the refactoring labels and the refactoring needing comments, respectively. We will be working with 4 unique refactoring label clases. The dataset of 4009 rows with a unique instance of comments for each corresponding label. Hence, we have 2 learnable parameters to account for.  
 
 ## Models used
 * Random Forest Classifier
