@@ -127,7 +127,7 @@ class DataPreparation:
 if __name__ == "__main__":
     start = time.time()
     # Load data
-    data = pd.read_csv(r'C:\Users\GEM001\Downloads\FR-Dataset.csv')
+    data = pd.read_csv(r'../Data/FR-Dataset.csv')
     dataprep = DataPreparation(data)
     dataprep()
 
