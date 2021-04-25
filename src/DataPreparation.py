@@ -91,3 +91,20 @@ class DataPreparation:
         df = pd.concat([pd.DataFrame(x.toarray()), df], axis=1)
 
         return df
+
+    def split(self, df):
+        """
+
+        :param df:
+        :return:
+        """
+        columns = list(df.columns)
+        X_train, X_test, y_train, y_test = train_test_split(df[columns[:-4]], df[columns[-4:]], test_size=0.25,
+                                                            random_state=42)
+        X_train = X_train.drop(columns=['Text'])
+        X_test = X_test.drop(columns=['Text'])
+        print(X_train)
+        X_train.to_csv(r'../Data/Train_Features.csv')
+        y_train.to_csv(r'../Data/Train_Labels.csv')
+        X_test.to_csv(r'../Data/Test_Features.csv')
+        y_test.to_csv(r'../Data/Test_Labels.csv')
