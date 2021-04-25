@@ -33,3 +33,5 @@ This repository is for the course Applied Data Science 1, for its final project 
 
 
 ## How to Run
+1- Clone the project
+2- Run the test.py file to see the predicted result based on pickled train models.
