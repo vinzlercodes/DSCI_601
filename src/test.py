@@ -7,7 +7,7 @@ from sklearn.metrics import classification_report
 
 def unpickle_and_test(name,X_test,y_test):
     """
-    This method used the pickled classifiers wich is RandomForest,MNB,SVM,LR  in dir '../models..'
+    This method uses the pickled classifiers wich is RandomForest,MNB,SVM,LR  in dir '../models..'
     an generate the predict result with X_test and  y_test.classification_report also will be generated
 
     :param name:string use for model(classifier) name
