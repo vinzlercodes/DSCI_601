@@ -1,6 +1,6 @@
-# DSCI_601
+# DSCI_602
 
-This repository is for the course Applied Data Science 1, for its final project documentation.
+This repository is for the course Applied Data Science 2, for its final capstone documentation.
 
 # Description
 
