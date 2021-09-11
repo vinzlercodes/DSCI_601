@@ -2,4 +2,15 @@ import pymongo
 import pymongo as pymongo
 import pandas as pd
 
-conn = pymongo.MongoClient('localhost:27017')['smartshark_2_1']['commit']
+result = pymongo.MongoClient('localhost:27017')['smartshark_2_1']['commit'].aggregate([
+   {'$match': {
+        'labels.documentation_technicaldept_add': True}
+   }
+       ,
+       {'$lookup':
+            {'from' : 'refactoring',
+             'localField' : '_id',
+             'foreignField' : 'commit_id',
+             'as' : 'commit'}},
+
+
