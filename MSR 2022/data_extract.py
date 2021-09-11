@@ -1,3 +1,5 @@
+__authors__ = 'Abdullah + Vinayak'
+
 import pymongo as pymongo
 
 import pandas as pd
