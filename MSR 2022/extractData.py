@@ -36,8 +36,11 @@ result = pymongo.MongoClient('localhost:27017')['smartshark_2_1']['commit'].aggr
     {'$project':{
         'labels.documentation_technicaldept_add':1,
         'labels.documentation_technicaldept_remove':1,
+        #commit message
         'message':1,
+        #type of refactoring
         'commit.type':1,
+        #description of refactoring
         'commit.description':1,
         'commit.detection_tool':1
 
