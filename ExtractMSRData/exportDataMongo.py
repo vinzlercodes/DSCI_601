@@ -11,6 +11,15 @@ result = pymongo.MongoClient('localhost:27017')['smartshark_2_1']['commit'].aggr
             {'from' : 'refactoring',
              'localField' : '_id',
              'foreignField' : 'commit_id',
-             'as' : 'commit'}},
+             'as' : 'commit'}},{'$match': {
+            'commit': {
+                '$exists': True,
+                '$not': {'$size': 0}
+
+            }}
+
+   },{
+        '$unwind': '$commit'
+    },
 
 
