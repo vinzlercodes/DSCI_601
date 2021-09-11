@@ -36,6 +36,7 @@ result = pymongo.MongoClient('localhost:27017')['smartshark_2_1']['commit'].aggr
     '$unwind': '$commit'
 },
 #the needed columns will be selected as a result from the previous query
+    #any columns are needed in the future can be added here
     {'$project':{
         'labels.documentation_technicaldept_add':1,
         'labels.documentation_technicaldept_remove':1,
@@ -53,6 +54,7 @@ result = pymongo.MongoClient('localhost:27017')['smartshark_2_1']['commit'].aggr
 array = []
 for x in result:
     #append all the columns in the array
+    #any columns are needed in the future can be added here
     array.append({'id':x['_id'] ,'technicaldept_add':x['labels']['documentation_technicaldept_add'],'technicaldept_remove':x['labels']['documentation_technicaldept_remove'],'message':x['message'],'type':x['commit']['type'],'description':x['commit']['description'],'detection_tool':x['commit']['detection_tool']})
 
     #save the data into csv file
