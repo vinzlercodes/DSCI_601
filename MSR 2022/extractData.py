@@ -45,3 +45,8 @@ result = pymongo.MongoClient('localhost:27017')['smartshark_2_1']['commit'].aggr
         'commit.detection_tool':1
 
     }}
+])
+#create array to save the result from mongoDB and convert it to text format
+array = []
+for x in result:
+    array.append({'id':x['_id'] ,'technicaldept_add':x['labels']['documentation_technicaldept_add']
