@@ -51,3 +51,7 @@ array = []
 for x in result:
     #append all the columns in the array
     array.append({'id':x['_id'] ,'technicaldept_add':x['labels']['documentation_technicaldept_add'],'technicaldept_remove':x['labels']['documentation_technicaldept_remove'],'message':x['message'],'type':x['commit']['type'],'description':x['commit']['description'],'detection_tool':x['commit']['detection_tool']})
+
+    #save the data into csv file
+    pd.DataFrame(array).to_csv('result_mongo.csv')
+
