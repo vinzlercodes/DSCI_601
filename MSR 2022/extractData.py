@@ -1,3 +1,4 @@
+#import all needed library
 import pymongo
 import pymongo as pymongo
 import pandas as pd
@@ -31,7 +32,7 @@ result = pymongo.MongoClient('localhost:27017')['smartshark_2_1']['commit'].aggr
 
     '$unwind': '$commit'
 },
-
+#the needed columns will be selected as a result from the previous query
     {'$project':{
         'labels.documentation_technicaldept_add':1,
         'labels.documentation_technicaldept_remove':1,
