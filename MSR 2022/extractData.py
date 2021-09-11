@@ -19,11 +19,14 @@ result = pymongo.MongoClient('localhost:27017')['smartshark_2_1']['commit'].aggr
     ,
     {'$lookup':
          {'from' : 'refactoring',
+          #refactoring table
           'localField' : '_id',
+          #commit table
           'foreignField' : 'commit_id',
           'as' : 'commit'}},{'$match': {
         #remove any instances where the size of the array is = 0 or has no input
         'commit': {
+            #$exists will check if the row exists or not
             '$exists': True,
             '$not': {'$size': 0}
 
