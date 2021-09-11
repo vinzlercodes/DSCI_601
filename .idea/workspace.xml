@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="create the file and set the with the MongoDb server">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MSR 2022/extractData.py" beforeDir="false" afterPath="$PROJECT_DIR$/MSR 2022/extractData.py" afterDir="false" />
-    </list>
+    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="lookup for the refactoring type where commit_id in commit table =  _id i the refactoring table" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +33,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -182,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631399264484</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="lookup for the refactoring type where commit_id in commit table =  _id i the refactoring table">
+      <created>1631400535655</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1631400535655</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,13 +210,14 @@
     <MESSAGE value="train.py comments" />
     <MESSAGE value="test.py comments" />
     <MESSAGE value="create the file and set the with the MongoDb server" />
-    <option name="LAST_COMMIT_MESSAGE" value="create the file and set the with the MongoDb server" />
+    <MESSAGE value="lookup for the refactoring type where commit_id in commit table =  _id i the refactoring table" />
+    <option name="LAST_COMMIT_MESSAGE" value="lookup for the refactoring type where commit_id in commit table =  _id i the refactoring table" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1631399299551">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1631400539305">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1631399299551" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1631400539305" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

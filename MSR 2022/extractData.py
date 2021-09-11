@@ -21,8 +21,23 @@ result = pymongo.MongoClient('localhost:27017')['smartshark_2_1']['commit'].aggr
           'localField' : '_id',
           'foreignField' : 'commit_id',
           'as' : 'commit'}},{'$match': {
+        #remove any instances where the size of the array is = 0 or has no input
         'commit': {
             '$exists': True,
             '$not': {'$size': 0}
 
-        }}}])
+        }}},{
+
+
+    '$unwind': '$commit'
+},
+
+    {'$project':{
+        'labels.documentation_technicaldept_add':1,
+        'labels.documentation_technicaldept_remove':1,
+        'message':1,
+        'commit.type':1,
+        'commit.description':1,
+        'commit.detection_tool':1
+
+    }}
