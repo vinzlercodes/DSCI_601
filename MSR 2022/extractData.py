@@ -48,11 +48,39 @@ def extract(connect):
 
             }}
 
-        }, {
+        }
+        , {
             '$unwind': '$commit'
+
+        },
+
+        {'$lookup':
+         #vcs_system table
+             {'from': 'vcs_system',
+              'localField': 'vcs_system_id',
+              #commit table
+              'foreignField': '_id',
+              'as': 'project_url'}},
+        #remove any instances where the size of the array is = 0 or has no input
+        {'$match': {
+            'project_url': {
+                #$exists will check if the row exists or not
+                '$exists': True,
+                '$not': {'$size': 0}
+
+            }}
+
+        }
+
+
+
+        , {
+            '$unwind': '$project_url'
+
         },
 
         {'$project': {
+            'project_url.url':1,
             'labels.documentation_technicaldept_add': 1,
             'labels.documentation_technicaldept_remove': 1,
             #commit message
@@ -105,7 +133,7 @@ def main():
     for x in result:
         #append all the columns in the array
         #any columns are needed in the future can be added here
-        array.append({'id': x['_id'], 'technicaldept_add': x['labels']['documentation_technicaldept_add'],
+        array.append({'url': x['project_url']['url'],'id': x['_id'], 'technicaldept_add': x['labels']['documentation_technicaldept_add'],
                       'technicaldept_remove': x['labels']['documentation_technicaldept_remove'],
                       'message': x['message'], 'type': x['commit']['type'], 'description': x['commit']['description'],
                       'detection_tool': x['commit']['detection_tool']})
