@@ -81,6 +81,7 @@ def extract(connect):
 
         {'$project': {
             'project_url.url':1,
+            'revision_hash':1,
             'labels.documentation_technicaldept_add': 1,
             'labels.documentation_technicaldept_remove': 1,
             #commit message
@@ -133,7 +134,7 @@ def main():
     for x in result:
         #append all the columns in the array
         #any columns are needed in the future can be added here
-        array.append({'url': x['project_url']['url'],'id': x['_id'], 'technicaldept_add': x['labels']['documentation_technicaldept_add'],
+        array.append({'url': x['project_url']['url'],'id': x['_id'],'hash': x['revision_hash'], 'technicaldept_add': x['labels']['documentation_technicaldept_add'],
                       'technicaldept_remove': x['labels']['documentation_technicaldept_remove'],
                       'message': x['message'], 'type': x['commit']['type'], 'description': x['commit']['description'],
                       'detection_tool': x['commit']['detection_tool']})
