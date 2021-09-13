@@ -94,7 +94,7 @@ class DataPreparation:
 if __name__ == "__main__":
     start = time.time()
     # Load data
-    data = pd.read_csv(r'C:\Users\vinay\Desktop\DSCII 601\Project\DSCI_601\Data\FR-Dataset.csv')
+    data = pd.read_csv(r'C:\Users\vinay\Desktop\DSCII 601\Project\DSCI_601\MSR_2022\result_mongo.csv')
     dataprep = DataPreparation(data)
     dataprep()
     print('The data is ready')
