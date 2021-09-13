@@ -90,17 +90,6 @@ class DataPreparation:
         self.dataFrame = self.dataFrame.drop_duplicates(subset=['Text'])
         # implement labelBinarizer function
         self.classes = self.labelBinarizer(self.dataFrame['Class'])
-        # this will rest the index before concatnate the data
-        self.dataFrame = self.dataFrame.reset_index(drop=True)
-        self.dataFrame = pd.concat([self.dataFrame, self.classes], axis=1)
-        # saved the Preprocessed data
-        self.dataFrame.to_csv("../Data/Preprocessed.csv")
-        # apply Vectorization tfidf function and concatenate the data
-        vectorOfFeatures, self.vectorzier = self.Vectorization(self.dataFrame)
-        self.dataFrame = self.concatnate(vectorOfFeatures, self.dataFrame)
-        # split the data set
-        self.X_train, self.X_test, self.y_train, self.y_test = self.split(self.dataFrame)
-
 
 if __name__ == "__main__":
     start = time.time()
