@@ -77,58 +77,6 @@ class DataPreparation:
         tempdf = pd.DataFrame(tempdf, columns=list(mlb.classes_))
         return tempdf
 
-    def Vectorization(self, df):
-        """
-        This function applied Vectorization using TF-IDF  here for each word cell to achieve
-        a weight importance value to a particular word in the list and
-        that will help with highlighting certain syntax words or indicative words
-        that will help with refactoring label prediction
-        :param df:this is the pandas data frame use it with text column to apply Tfidf Vectorizer
-        :return:thus will return x as Vectorized text
-        """
-        v = TfidfVectorizer(max_features=1000)
-        x = v.fit_transform(df['Text'])
-
-        return x, v
-
-    def concatnate(self, x, df):
-        """
-        This function cleans the 'text' column and then replaces the values with the vectorized text for better
-        class to input correlation
-
-        :param x: vectorized dataframe 'text' column
-        :param df: the cleaned and dataframe in use
-        :return df: preprocessed dataframe with vectorized 'text' column
-        """
-        df.dropna(subset=["Text"], inplace=True)
-        df = df.drop(columns=['ID', 'Class'])
-        df['Text'] = df['Text'].apply(self.preprocess)
-        df = pd.concat([pd.DataFrame(x.toarray()), df], axis=1)
-
-        return df
-
-    def split(self, df):
-        """
-        The preprocessed dataset is taken and split into the testing set and training set, X_train is the features
-        that will be fed into the model and y_train are what it should predict based on those inputs (learning). X_test
-        will be the unseen data input which the model will make predictions on and y_test will be used to compare the
-        results and accuracy of predictions.
-
-        :param df: the preprocessed and cleaned dataset
-        :return: X-train, Y-Train, X-test, y-Test
-        """
-        columns = list(df.columns)
-        X_train, X_test, y_train, y_test = train_test_split(df[columns[:-4]], df[columns[-4:]], test_size=0.25,
-                                                            random_state=42)
-        X_train = X_train.drop(columns=['Text'])
-        X_test = X_test.drop(columns=['Text'])
-        X_train.to_csv(r'../Data/Train_Features.csv')
-        y_train.to_csv(r'../Data/Train_Labels.csv')
-        X_test.to_csv(r'../Data/Test_Features.csv')
-        y_test.to_csv(r'../Data/Test_Labels.csv')
-
-        return X_train, X_test, y_train, y_test
-
     def __call__(self):
         """
         The __call__ method used here to turn the instances
