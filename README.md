@@ -18,7 +18,7 @@ The goal of the project is to support software developers in improving the quali
 
 ## Requirements
 
-* Python 3 (3.8)
+* Python 3 (3.8+)
 * numpy (1.18.5)
 * pandas (1.0.5)
 * pickle ( 0.7.5)
