@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="lookup for the refactoring type where commit_id in commit table =  _id i the refactoring table" />
+    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="update pre process method">
+      <change beforePath="$PROJECT_DIR$/MSR 2022/DataPreparation.py" beforeDir="false" afterPath="$PROJECT_DIR$/MSR 2022/DataPreparation.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,8 +66,30 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
-  <component name="RunManager" selected="Python.DataPreparation">
+  <component name="RunManager" selected="Python.DataPreparation (1)">
+    <configuration name="DataPreparation (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DSCI_601" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MSR 2022" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MSR 2022/DataPreparation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="DataPreparation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DSCI_601" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -80,6 +104,27 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/DataPreparation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="extractData" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DSCI_601" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MSR 2022" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MSR 2022/extractData.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -134,6 +179,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.DataPreparation (1)" />
+        <item itemvalue="Python.extractData" />
         <item itemvalue="Python.DataPreparation" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.train" />
@@ -187,7 +234,91 @@
       <option name="project" value="LOCAL" />
       <updated>1631400535655</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary=" remove any instances where the size of the array is = 0 or has no input">
+      <created>1631400903466</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1631400903466</updated>
+    </task>
+    <task id="LOCAL-00007" summary="the needed columns will be selected as a result from the previous query">
+      <created>1631401183526</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1631401183526</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Description of the columns">
+      <created>1631401392017</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1631401392017</updated>
+    </task>
+    <task id="LOCAL-00009" summary="convert the result from MongoDB to tabular format">
+      <created>1631401662594</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1631401662594</updated>
+    </task>
+    <task id="LOCAL-00010" summary=" append all the columns in the array">
+      <created>1631401847155</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1631401847155</updated>
+    </task>
+    <task id="LOCAL-00011" summary="save the data into csv file">
+      <created>1631401935444</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1631401935444</updated>
+    </task>
+    <task id="LOCAL-00012" summary="check if the row exists or not">
+      <created>1631402816846</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1631402816846</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add and fix some comments">
+      <created>1631402935431</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1631402935431</updated>
+    </task>
+    <task id="LOCAL-00014" summary="some major changes m change the body of file , add mor functions , and create the parser">
+      <created>1631420997005</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1631420997005</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add project name and project url to extracted data">
+      <created>1631425633487</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1631425633488</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add  commit hash">
+      <created>1631473885826</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1631473885832</updated>
+    </task>
+    <task id="LOCAL-00017" summary="update pre process method">
+      <created>1631674803381</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1631674803381</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,13 +342,58 @@
     <MESSAGE value="test.py comments" />
     <MESSAGE value="create the file and set the with the MongoDb server" />
     <MESSAGE value="lookup for the refactoring type where commit_id in commit table =  _id i the refactoring table" />
-    <option name="LAST_COMMIT_MESSAGE" value="lookup for the refactoring type where commit_id in commit table =  _id i the refactoring table" />
+    <MESSAGE value=" remove any instances where the size of the array is = 0 or has no input" />
+    <MESSAGE value="the needed columns will be selected as a result from the previous query" />
+    <MESSAGE value="Description of the columns" />
+    <MESSAGE value="convert the result from MongoDB to tabular format" />
+    <MESSAGE value=" append all the columns in the array" />
+    <MESSAGE value="save the data into csv file" />
+    <MESSAGE value="heck if the row exists or not" />
+    <MESSAGE value="check if the row exists or not" />
+    <MESSAGE value="add and fix some comments" />
+    <MESSAGE value="some major changes m change the body of file , add mor functions , and create the parser" />
+    <MESSAGE value="add project name and project url to extracted data" />
+    <MESSAGE value="add  commit hash" />
+    <MESSAGE value="update pre process method" />
+    <option name="LAST_COMMIT_MESSAGE" value="update pre process method" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1631400539305">
+    <state x="421" y="208" key="#Notifications" timestamp="1631674717905">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1631400539305" />
+    <state x="421" y="208" key="#Notifications/0.0.1366.768@0.0.1366.768" timestamp="1631674717905" />
+    <state x="430" y="239" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1631674575152">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="430" y="239" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768@0.0.1366.768" timestamp="1631674575152" />
+    <state width="1323" height="129" key="GridCell.Tab.0.bottom" timestamp="1631674578368">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="129" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1631674578368" />
+    <state width="1323" height="129" key="GridCell.Tab.0.center" timestamp="1631674578367">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="129" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1631674578367" />
+    <state width="1323" height="129" key="GridCell.Tab.0.left" timestamp="1631674578367">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="129" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1631674578367" />
+    <state width="1323" height="129" key="GridCell.Tab.0.right" timestamp="1631674578368">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="129" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1631674578368" />
+    <state x="129" y="59" key="MergeDialog" timestamp="1631674834356">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="129" y="59" key="MergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1631674834356" />
+    <state x="321" y="145" key="MultipleFileMergeDialog" timestamp="1631674834417">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="321" y="145" key="MultipleFileMergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1631674834417" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1631674866007">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1631674866007" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
