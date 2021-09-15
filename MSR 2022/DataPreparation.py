@@ -47,3 +47,33 @@ class DataPreparation:
         except:
             print(f'There is an error in {x}')
             return 'empty'
+
+    def labelBinarizer(self, df):
+        """
+        The function converts the multilabel problem into binary classification across multiple classes.
+        The dataset classes are converted into unique columns and their presence values are encoded by 0 or 1.
+        :param df: the cleaned and lemmatized dataframe
+        :return tempdf: a further preprocessed dataframe with dummy variables
+        """
+        mlb = MultiLabelBinarizer()
+        # select the 'labels' column for dummy creation
+        tempdf = pd.DataFrame(columns=['labels'])
+        for i in df:
+            temp = []
+            try:
+                # separating the classes by whitespace
+                i = i.replace(' ', '')
+                # separating each class entry using ',' delimeter
+                for j in i.split(','):
+                    if j != '':
+                        temp.append(j.strip())
+            except:
+                pass
+            tempdf = tempdf.append(pd.DataFrame({'labels': [temp]}))
+        # storing the classes for each entry in tuples
+        tempdf.apply(lambda x: tuple(x.values))
+        mlb.fit(tempdf['labels'])
+        # creating the dummy variables for each unique class
+        tempdf = mlb.transform(tempdf['labels'])
+        tempdf = pd.DataFrame(tempdf, columns=list(mlb.classes_))
+        return tempdf
