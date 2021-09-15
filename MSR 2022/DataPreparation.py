@@ -91,3 +91,19 @@ class DataPreparation:
         x = v.fit_transform(df['message'])
 
         return x, v
+
+    def concatnate(self, df):
+        """
+        This function cleans the 'message' column and then replaces the values with the vectorized text for better
+        class to input correlation
+
+        :param x: vectorized dataframe 'text' column
+        :param df: the cleaned and dataframe in use
+        :return df: preprocessed dataframe with vectorized 'message' column
+        """
+
+        df.dropna(subset=["message"], inplace=True)
+        df = df.drop(columns=['description','detection_tool','type'])
+        df['message'] = df['message'].apply(self.preprocess)
+
+        return df
