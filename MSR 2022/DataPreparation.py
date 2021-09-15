@@ -77,3 +77,17 @@ class DataPreparation:
         tempdf = mlb.transform(tempdf['labels'])
         tempdf = pd.DataFrame(tempdf, columns=list(mlb.classes_))
         return tempdf
+
+    def Vectorization(self, df):
+        """
+        This function applied Vectorization using TF-IDF  here for each word cell to achieve
+        a weight importance value to a particular word in the list and
+        that will help with highlighting certain syntax words or indicative words
+        that will help with refactoring label prediction
+        :param df:this is the pandas data frame use it with text column to apply Tfidf Vectorizer
+        :return:thus will return x as Vectorized text
+        """
+        v = TfidfVectorizer(max_features=1000)
+        x = v.fit_transform(df['message'])
+
+        return x, v
