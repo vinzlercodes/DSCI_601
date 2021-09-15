@@ -107,3 +107,33 @@ class DataPreparation:
         df['message'] = df['message'].apply(self.preprocess)
 
         return df
+
+    def __call__(self):
+        """
+        The __call__ method used here to turn the instances
+        of the class into callables. where here the instances behave like
+        functions and can be called like a function to be implemented.
+        :return:
+        """
+        # this line will drop the null values of text column
+        self.dataFrame.dropna(subset=["message"], inplace=True)
+        # here to drop duplicate values of text column
+        self.dataFrame = self.dataFrame.drop_duplicates(subset=['message'])
+        # implement labelBinarizer function
+        self.classes = self.labelBinarizer(self.dataFrame['type'])
+
+        self.dataFrame = self.dataFrame.reset_index(drop=True)
+        self.dataFrame = pd.concat([self.dataFrame, self.classes], axis=1)
+        # apply Vectorization tfidf function and concatenate the data
+        #vectorOfFeatures, self.vectorzier = self.Vectorization(self.dataFrame)
+        self.dataFrame = self.concatnate( self.dataFrame)
+        # saved the Preprocessed data
+        self.dataFrame.to_csv("../MSR 2022/Preprocessed.csv")
+
+if __name__ == "__main__":
+    start = time.time()
+    # Load data
+    data = pd.read_csv(r'../MSR 2022/result_mongo.csv')
+    dataprep = DataPreparation(data)
+    dataprep()
+    print('The data is ready')
