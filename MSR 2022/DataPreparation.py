@@ -34,8 +34,8 @@ class DataPreparation:
         :return: this will return the column after been preprocessed  or return empty if there is an error
         """
         try:
-            stop_words = stopwords.words('english')
             lemmatizer = WordNetLemmatizer()
+            stop_words = stopwords.words('english')
             x = x.lower()
             x = x.translate(str.maketrans('', '', string.punctuation))
             x = x.split()
@@ -44,7 +44,7 @@ class DataPreparation:
             x = str(x).replace(',', ' ').replace("'", "")[1:-1]
             return x
         except:
-            print(f'There is an error in {x}')
+            print(f'There is an error while preprocess in {x}')
             return 'empty'
 
     def labelBinarizer(self, df):

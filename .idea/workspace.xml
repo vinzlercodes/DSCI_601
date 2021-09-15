@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="add  commit hash">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Preprocessed.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Preprocessed.csv" afterDir="false" />
+    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="update pre process method">
       <change beforePath="$PROJECT_DIR$/MSR 2022/DataPreparation.py" beforeDir="false" afterPath="$PROJECT_DIR$/MSR 2022/DataPreparation.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -313,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631473885832</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="update pre process method">
+      <created>1631674803381</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1631674803381</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,7 +354,8 @@
     <MESSAGE value="some major changes m change the body of file , add mor functions , and create the parser" />
     <MESSAGE value="add project name and project url to extracted data" />
     <MESSAGE value="add  commit hash" />
-    <option name="LAST_COMMIT_MESSAGE" value="add  commit hash" />
+    <MESSAGE value="update pre process method" />
+    <option name="LAST_COMMIT_MESSAGE" value="update pre process method" />
   </component>
   <component name="WindowStateProjectService">
     <state x="421" y="208" key="#Notifications" timestamp="1631674717905">
@@ -376,10 +382,18 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="129" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1631674578368" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1631473890534">
+    <state x="129" y="59" key="MergeDialog" timestamp="1631674834356">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1631473890534" />
+    <state x="129" y="59" key="MergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1631674834356" />
+    <state x="321" y="145" key="MultipleFileMergeDialog" timestamp="1631674834417">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="321" y="145" key="MultipleFileMergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1631674834417" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1631674866007">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1631674866007" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
