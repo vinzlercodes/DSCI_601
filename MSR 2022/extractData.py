@@ -1,5 +1,4 @@
-__authors__ = 'Abdullah '
-
+__authors__ = 'Abdullah +vinayak '
 import pymongo as pymongo
 import pandas as pd
 import os
@@ -15,14 +14,10 @@ def connect():
     """
     #connect with the MongoDb server
     return pymongo.MongoClient('localhost:27017')['smartshark_2_1']
-
-
 def extract(connect):
     """
     Thi function is responsible to handle the NOsql queries and send it ro MongoDB server
-
     :param connect:connection established in the connect function
-
     """
     #look for the instances where technicaldept_add' is  True
     result = connect['commit'].aggregate([
@@ -30,7 +25,6 @@ def extract(connect):
             'labels.documentation_technicaldept_add': True}
         }
         #lookup for the refactoring type where commit_id in commit table =  _id i the refactoring table
-
         ,
         {'$lookup':
          #refactoring table
@@ -48,6 +42,7 @@ def extract(connect):
 
             }}
 
+        }, {
         }
         , {
             '$unwind': '$commit'
@@ -81,7 +76,6 @@ def extract(connect):
 
         {'$project': {
             'project_url.url':1,
-            'revision_hash':1,
             'labels.documentation_technicaldept_add': 1,
             'labels.documentation_technicaldept_remove': 1,
             #commit message
@@ -91,16 +85,11 @@ def extract(connect):
             'commit.description': 1,
             #description of refactoring
             'commit.detection_tool': 1
-
         }}
-
     ])
     return result
-
-
 def main():
     """
-
     :return:
     """
     # Create the parser
@@ -108,14 +97,13 @@ def main():
     my_parser.add_argument('--path',
                            type=str,
                            help='the path to export the file')
-
     # Execute the parse_args() method
     args = my_parser.parse_args()
     if args.path:
         input_path = args.path
     else:
         input_path = None
-       #name of the file
+    #name of the file
     name_of_file = 'result_mongo.csv'
     #check the path if not correct  then take the file name and save it
     try:
@@ -126,7 +114,7 @@ def main():
             print(f"No arguments is  provided or the arguments is corrupted exporting the result to the default path 'result_mongo.csv'")
     except:
         print(f"the arguments {input_path} is corrupted ")
-        name_of_file = 'result_mongo.csv'
+    name_of_file = 'result_mongo.csv'
     connecter = connect()
     result = extract(connecter)
     #create array to save the result from mongoDB and convert it to text format
@@ -134,11 +122,10 @@ def main():
     for x in result:
         #append all the columns in the array
         #any columns are needed in the future can be added here
-        array.append({'url': x['project_url']['url'],'id': x['_id'],'hash': x['revision_hash'], 'technicaldept_add': x['labels']['documentation_technicaldept_add'],
-                      'technicaldept_remove': x['labels']['documentation_technicaldept_remove'],
-                      'message': x['message'], 'type': x['commit']['type'], 'description': x['commit']['description'],
-                      'detection_tool': x['commit']['detection_tool']})
-
+        array.append({'url': x['project_url']['url'],'id': x['_id'], 'technicaldept_add': x['labels']['documentation_technicaldept_add'],
+                                    'technicaldept_remove': x['labels']['documentation_technicaldept_remove'],
+                                    'message': x['message'], 'type': x['commit']['type'], 'description': x['commit']['description'],
+                                    'detection_tool': x['commit']['detection_tool']})
         #save the data into csv file
     try:
         pd.DataFrame(array).to_csv(name_of_file)
@@ -147,6 +134,5 @@ def main():
         print("the exportation process is aborted due to an error")
 
 
-if __name__ == '__main__':
-    main()
-
+    if __name__ == '__main__':
+        main()
