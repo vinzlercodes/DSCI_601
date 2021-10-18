@@ -1,3 +1,4 @@
+
 __authors__ = 'Abdullah + Vinayak'
 
 import pickle
@@ -9,6 +10,9 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn import svm
+from pprint import pprint
+from sklearn.neural_network import MLPClassifier
+
 
 
 def train_and_pickle(model, name, X_train, y_train):
@@ -36,15 +40,17 @@ if __name__ == "__main__":
     """
     start = time.time()
     # Load data
-    X_train = pd.read_csv(r'../Data/Train_Features.csv', index_col=0)
-    y_train = pd.read_csv(r'../Data/Train_Labels.csv', index_col=0)
+    X_train = pd.read_csv(r'../MSR 2022/Train_Features.csv', index_col=0)
+    y_train = pd.read_csv(r'../MSR 2022/Train_Labels.csv', index_col=0)
     # perapare the classifiers with their parameters to be send to train_and_pickle
-    classifiers = [{'classifierName': 'RandomForest', 'classifier': RandomForestClassifier(class_weight='balanced')}
-        , {'classifierName': 'MNB', 'classifier': MultinomialNB()}, {'classifierName': 'SVM', 'classifier': svm.SVC()},
-                   {'classifierName': 'LR', 'classifier': LogisticRegression()}]
-    # send the classifiers one by one usinf for loop
+    #classifiers = [{'classifierName': 'RandomForest', 'classifier': RandomForestClassifier(class_weight='balanced')}
+    #, {'classifierName': 'MNB', 'classifier': MultinomialNB()}, {'classifierName': 'SVM', 'classifier': svm.SVC()},
+    #{'classifierName': 'LR', 'classifier': LogisticRegression()} ,{'classifierName': 'MLP', 'classifier': MLPClassifier(random_state=1, max_iter=300)}]
+    classifiers = [{'classifierName': 'MLP', 'classifier': MLPClassifier(random_state=1, max_iter=300)}]
+    # send the classifiers one by one using for loop
     for x in classifiers:
         print(x['classifierName'], x['classifier'])
+        #pprint(x['classifier'].get_params())
         classifierChain = ClassifierChain(x['classifier'])
         train_and_pickle(classifierChain, x['classifierName'], X_train, y_train)
         print((time.time() - start), 'sec')
