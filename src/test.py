@@ -1,3 +1,4 @@
+
 __authors__ = 'Abdullah + Vinayak'
 
 import pickle
@@ -31,9 +32,10 @@ if __name__ == '__main__':
       """
 
     # Load data
-    X_test = pd.read_csv(r'../Data/Test_Features.csv',index_col=0)
-    y_test = pd.read_csv(r'../Data/Test_Labels.csv',index_col=0)
-    classifiers = ['RandomForest', 'MNB','SVM','LR']
+    X_test = pd.read_csv(r'../MSR 2022/Test_Features.csv',index_col=0)
+    y_test = pd.read_csv(r'../MSR 2022/Test_Labels.csv',index_col=0)
+    #classifiers = ['RandomForest', 'MNB','SVM','LR' ,'MLP']
+    classifiers = ['MLP']
     for x in classifiers:
         start = time.time()
         print(x)
