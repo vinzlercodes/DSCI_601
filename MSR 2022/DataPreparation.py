@@ -88,10 +88,12 @@ class DataPreparation:
         """
         v = TfidfVectorizer(max_features=1000)
         x = v.fit_transform(df['v1_comment'])
+        
+        # CountVectorizer Implementation
 
-        #v = CountVectorizer(min_df=0, lowercase=False)
-        #v.fit(df['v1_comment'])
-        #x= v.transform(df['v1_comment'])
+        v = CountVectorizer(min_df=0, lowercase=False)
+        v.fit(df['v1_comment'])
+        x= v.transform(df['v1_comment'])
 
         return x, v
 
