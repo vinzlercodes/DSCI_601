@@ -19,14 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="test set split file for the RF , SVM AND MLP">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MSR 2022/DataPreparation.py" beforeDir="false" afterPath="$PROJECT_DIR$/MSR 2022/DataPreparation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MSR 2022/Test_Features.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MSR 2022/Test_Features.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MSR 2022/Test_Labels.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MSR 2022/Test_Labels.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MSR 2022/Train_Features.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MSR 2022/Train_Features.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MSR 2022/Train_Labels.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MSR 2022/Train_Labels.csv" afterDir="false" />
-    </list>
+    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="hyperparameter tuning And Sampling" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -351,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634523134989</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="hyperparameter tuning And Sampling">
+      <created>1634697666203</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1634697666203</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,7 +392,8 @@
     <MESSAGE value="Hyper prams" />
     <MESSAGE value="fux the train src file to add the RF , SVM AND MLP" />
     <MESSAGE value="test set split file for the RF , SVM AND MLP" />
-    <option name="LAST_COMMIT_MESSAGE" value="test set split file for the RF , SVM AND MLP" />
+    <MESSAGE value="hyperparameter tuning And Sampling" />
+    <option name="LAST_COMMIT_MESSAGE" value="hyperparameter tuning And Sampling" />
   </component>
   <component name="WindowStateProjectService">
     <state x="421" y="208" key="#Notifications" timestamp="1631674717905">
@@ -431,10 +432,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="321" y="145" key="MultipleFileMergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1631674834417" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1634523139923">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1634697790906">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1634523139923" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1634697790906" />
     <state x="65" y="45" key="new project wizard" timestamp="1634618310399">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
