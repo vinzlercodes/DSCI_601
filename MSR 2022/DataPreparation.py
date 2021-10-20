@@ -119,7 +119,7 @@ class DataPreparation:
         :return: X-train, Y-Train, X-test, y-Test
         """
         columns = list(df.columns)
-        X_train, X_test, y_train, y_test = train_test_split(df[columns[:-10]], df[columns[-10:]], test_size=0.25,
+        X_train, X_test, y_train, y_test = train_test_split(df[columns[:-10]], df[columns[-10:]], test_size=0.30,
                                                             random_state=42)
         X_train = X_train.drop(columns=['v1_comment'])
         X_test = X_test.drop(columns=['v1_comment'])
