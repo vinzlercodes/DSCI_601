@@ -19,7 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="add new files" />
+    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="test set split file for the RF , SVM AND MLP">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MSR 2022/DataPreparation.py" beforeDir="false" afterPath="$PROJECT_DIR$/MSR 2022/DataPreparation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MSR 2022/Test_Features.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MSR 2022/Test_Features.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MSR 2022/Test_Labels.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MSR 2022/Test_Labels.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MSR 2022/Train_Features.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MSR 2022/Train_Features.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MSR 2022/Train_Labels.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MSR 2022/Train_Labels.csv" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +67,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Downloads/answer_1" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -323,7 +330,28 @@
       <option name="project" value="LOCAL" />
       <updated>1634522454657</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Hyper prams">
+      <created>1634522732971</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1634522732971</updated>
+    </task>
+    <task id="LOCAL-00020" summary="fux the train src file to add the RF , SVM AND MLP">
+      <created>1634522957316</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1634522957316</updated>
+    </task>
+    <task id="LOCAL-00021" summary="test set split file for the RF , SVM AND MLP">
+      <created>1634523134989</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1634523134989</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,7 +389,10 @@
     <MESSAGE value="add  commit hash" />
     <MESSAGE value="update pre process method" />
     <MESSAGE value="add new files" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new files" />
+    <MESSAGE value="Hyper prams" />
+    <MESSAGE value="fux the train src file to add the RF , SVM AND MLP" />
+    <MESSAGE value="test set split file for the RF , SVM AND MLP" />
+    <option name="LAST_COMMIT_MESSAGE" value="test set split file for the RF , SVM AND MLP" />
   </component>
   <component name="WindowStateProjectService">
     <state x="421" y="208" key="#Notifications" timestamp="1631674717905">
@@ -372,6 +403,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="430" y="239" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768@0.0.1366.768" timestamp="1631674575152" />
+    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1634666200075">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1634666200075" />
     <state width="1323" height="129" key="GridCell.Tab.0.bottom" timestamp="1631674578368">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -396,10 +431,14 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="321" y="145" key="MultipleFileMergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1631674834417" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1634522740256">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1634523139923">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1634522740256" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1634523139923" />
+    <state x="65" y="45" key="new project wizard" timestamp="1634618310399">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="65" y="45" key="new project wizard/0.0.1366.768@0.0.1366.768" timestamp="1634618310399" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
