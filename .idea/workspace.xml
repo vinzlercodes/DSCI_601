@@ -19,7 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="hyperparameter tuning And Sampling" />
+    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="hyperparameter tuning And Sampling">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MSR 2022/Test_Features.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MSR 2022/Test_Features.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MSR 2022/Train_Features.csv" beforeDir="false" afterPath="$PROJECT_DIR$/MSR 2022/Train_Features.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/MNB.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/models/MNB.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/RandomForest.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/models/RandomForest.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/train.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +68,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Downloads/answer_1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -178,10 +186,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.DataPreparation (1)" />
+        <item itemvalue="Python.train" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.extractData" />
         <item itemvalue="Python.DataPreparation" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.train" />
       </list>
     </recent_temporary>
   </component>
@@ -351,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634697666203</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="hyperparameter tuning And Sampling">
+      <created>1634700874717</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1634700874718</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,26 +419,30 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="430" y="239" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768@0.0.1366.768" timestamp="1631674575152" />
-    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1634666200075">
+    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1635284278202">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1634666200075" />
-    <state width="1323" height="129" key="GridCell.Tab.0.bottom" timestamp="1631674578368">
+    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1635284278202" />
+    <state width="1323" height="275" key="GridCell.Tab.0.bottom" timestamp="1636836456881">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="129" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1631674578368" />
-    <state width="1323" height="129" key="GridCell.Tab.0.center" timestamp="1631674578367">
+    <state width="981" height="275" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1024.768@1366.0.1024.768" timestamp="1635633094402" />
+    <state width="1323" height="275" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1636836456881" />
+    <state width="1323" height="275" key="GridCell.Tab.0.center" timestamp="1636836456881">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="129" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1631674578367" />
-    <state width="1323" height="129" key="GridCell.Tab.0.left" timestamp="1631674578367">
+    <state width="981" height="275" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1024.768@1366.0.1024.768" timestamp="1635633094401" />
+    <state width="1323" height="275" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1636836456881" />
+    <state width="1323" height="275" key="GridCell.Tab.0.left" timestamp="1636836456881">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="129" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1631674578367" />
-    <state width="1323" height="129" key="GridCell.Tab.0.right" timestamp="1631674578368">
+    <state width="981" height="275" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1024.768@1366.0.1024.768" timestamp="1635633094400" />
+    <state width="1323" height="275" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1636836456881" />
+    <state width="1323" height="275" key="GridCell.Tab.0.right" timestamp="1636836456881">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="129" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1631674578368" />
+    <state width="981" height="275" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1024.768@1366.0.1024.768" timestamp="1635633094401" />
+    <state width="1323" height="275" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1636836456881" />
     <state x="129" y="59" key="MergeDialog" timestamp="1631674834356">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -432,14 +451,14 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="321" y="145" key="MultipleFileMergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1631674834417" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1634697790906">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1634700882001">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1634697790906" />
-    <state x="65" y="45" key="new project wizard" timestamp="1634618310399">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1634700882001" />
+    <state x="65" y="9" key="new project wizard" timestamp="1635284300955">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="65" y="45" key="new project wizard/0.0.1366.768@0.0.1366.768" timestamp="1634618310399" />
+    <state x="65" y="9" key="new project wizard/0.0.1366.768@0.0.1366.768" timestamp="1635284300955" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

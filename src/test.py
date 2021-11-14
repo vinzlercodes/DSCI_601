@@ -35,7 +35,7 @@ if __name__ == '__main__':
     X_test = pd.read_csv(r'../MSR 2022/Test_Features.csv',index_col=0)
     y_test = pd.read_csv(r'../MSR 2022/Test_Labels.csv',index_col=0)
     #classifiers = ['RandomForest', 'MNB','SVM','LR' ,'MLP']
-    classifiers = ['MLP']
+    classifiers = ['RandomForest']
     for x in classifiers:
         start = time.time()
         print(x)
