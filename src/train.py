@@ -43,10 +43,10 @@ if __name__ == "__main__":
     X_train = pd.read_csv(r'../MSR 2022/Train_Features.csv', index_col=0)
     y_train = pd.read_csv(r'../MSR 2022/Train_Labels.csv', index_col=0)
     # perapare the classifiers with their parameters to be send to train_and_pickle
-    #classifiers = [{'classifierName': 'RandomForest', 'classifier': RandomForestClassifier(class_weight='balanced')}
-    #, {'classifierName': 'MNB', 'classifier': MultinomialNB()}, {'classifierName': 'SVM', 'classifier': svm.SVC()},
-    #{'classifierName': 'LR', 'classifier': LogisticRegression()} ,{'classifierName': 'MLP', 'classifier': MLPClassifier(random_state=1, max_iter=300)}]
-    classifiers = [{'classifierName': 'MLP', 'classifier': MLPClassifier(random_state=1, max_iter=300)}]
+
+    classifiers = [{'classifierName': 'MNB', 'classifier': MultinomialNB()}, {'classifierName': 'SVM', 'classifier': svm.SVC()},
+    {'classifierName': 'LR', 'classifier': LogisticRegression()}]
+    #classifiers = [{'classifierName': 'MLP', 'classifier': MLPClassifier(random_state=1, max_iter=300)}]
     # send the classifiers one by one using for loop
     for x in classifiers:
         print(x['classifierName'], x['classifier'])
