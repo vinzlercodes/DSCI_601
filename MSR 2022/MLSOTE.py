@@ -70,3 +70,36 @@ def nearest_neighbour(X):
     nbs=NearestNeighbors(n_neighbors=5,metric='euclidean',algorithm='kd_tree').fit(X)
     euclidean,indices= nbs.kneighbors(X)
     return indices
+
+def MLSMOTE(X,y, n_sample):
+    """
+    Give the augmented data using MLSMOTE algorithm
+
+    args
+    X: pandas.DataFrame, input vector DataFrame
+    y: pandas.DataFrame, feature vector dataframe
+    n_sample: int, number of newly generated sample
+
+    return
+    new_X: pandas.DataFrame, augmented feature vector data
+    target: pandas.DataFrame, augmented target vector data
+    """
+    indices2 = nearest_neighbour(X)
+    n = len(indices2)
+    new_X = np.zeros((n_sample, X.shape[1]))
+    target = np.zeros((n_sample, y.shape[1]))
+    for i in range(n_sample):
+        reference = random.randint(0,n-1)
+        neighbour = random.choice(indices2[reference,1:])
+        all_point = indices2[reference]
+        nn_df = y[y.index.isin(all_point)]
+        ser = nn_df.sum(axis = 0, skipna = True)
+        target[i] = np.array([1 if val>2 else 0 for val in ser])
+        ratio = random.random()
+        gap = X.loc[reference,:] - X.loc[neighbour,:]
+        new_X[i] = np.array(X.loc[reference,:] + ratio * gap)
+    new_X = pd.DataFrame(new_X, columns=X.columns)
+    target = pd.DataFrame(target, columns=y.columns)
+    new_X = pd.concat([X, new_X], axis=0)
+    target = pd.concat([y, target], axis=0)
+    return new_X, target
