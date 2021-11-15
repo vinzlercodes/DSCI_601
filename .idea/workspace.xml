@@ -19,7 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="Add MLSOMTE function , nearest_neighbour" />
+    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="Add main MLSOMTE function , to create new balanced x and y">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MSR 2022/MLSOTE.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/MLSOTE.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/train.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +71,12 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
-  <component name="RunManager" selected="Python.DataPreparation (1)">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\GEM001\DSCI_601-1\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.train">
     <configuration name="DataPreparation (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DSCI_601" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -177,9 +187,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.DataPreparation (1)" />
         <item itemvalue="Python.train" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.DataPreparation (1)" />
         <item itemvalue="Python.extractData" />
         <item itemvalue="Python.DataPreparation" />
       </list>
@@ -372,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636918949879</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Add main MLSOMTE function , to create new balanced x and y">
+      <created>1636919381956</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1636919381956</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,8 +408,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="data labelization" />
-    <MESSAGE value="train.py comments" />
     <MESSAGE value="test.py comments" />
     <MESSAGE value="create the file and set the with the MongoDb server" />
     <MESSAGE value="lookup for the refactoring type where commit_id in commit table =  _id i the refactoring table" />
@@ -416,7 +431,9 @@
     <MESSAGE value="hyperparameter tuning And Sampling" />
     <MESSAGE value="Add MLSOMTE function" />
     <MESSAGE value="Add MLSOMTE function , nearest_neighbour" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add MLSOMTE function , nearest_neighbour" />
+    <MESSAGE value="Add main MLSOMTE function , to creare new balanced x and y" />
+    <MESSAGE value="Add main MLSOMTE function , to create new balanced x and y" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add main MLSOMTE function , to create new balanced x and y" />
   </component>
   <component name="WindowStateProjectService">
     <state x="421" y="208" key="#Notifications" timestamp="1631674717905">
@@ -431,26 +448,26 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1635284278202" />
-    <state width="1323" height="212" key="GridCell.Tab.0.bottom" timestamp="1636918254247">
+    <state width="1323" height="212" key="GridCell.Tab.0.bottom" timestamp="1636941663945">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="981" height="275" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1024.768@1366.0.1024.768" timestamp="1635633094402" />
-    <state width="1323" height="212" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1636918254247" />
-    <state width="1323" height="212" key="GridCell.Tab.0.center" timestamp="1636918254246">
+    <state width="1323" height="212" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1636941663945" />
+    <state width="1323" height="212" key="GridCell.Tab.0.center" timestamp="1636941663944">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="981" height="275" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1024.768@1366.0.1024.768" timestamp="1635633094401" />
-    <state width="1323" height="212" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1636918254246" />
-    <state width="1323" height="212" key="GridCell.Tab.0.left" timestamp="1636918254245">
+    <state width="1323" height="212" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1636941663944" />
+    <state width="1323" height="212" key="GridCell.Tab.0.left" timestamp="1636941663943">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="981" height="275" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1024.768@1366.0.1024.768" timestamp="1635633094400" />
-    <state width="1323" height="212" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1636918254245" />
-    <state width="1323" height="212" key="GridCell.Tab.0.right" timestamp="1636918254246">
+    <state width="1323" height="212" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1636941663943" />
+    <state width="1323" height="212" key="GridCell.Tab.0.right" timestamp="1636941663945">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="981" height="275" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1024.768@1366.0.1024.768" timestamp="1635633094401" />
-    <state width="1323" height="212" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1636918254246" />
+    <state width="1323" height="212" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1636941663945" />
     <state x="129" y="59" key="MergeDialog" timestamp="1631674834356">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -459,10 +476,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="321" y="145" key="MultipleFileMergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1631674834417" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1636918959792">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1636920072984">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1636918959792" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1636920072984" />
     <state x="65" y="9" key="new project wizard" timestamp="1635284300955">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

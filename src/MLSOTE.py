@@ -1,4 +1,8 @@
-
+import numpy as np
+import pandas as pd
+import random
+from sklearn.datasets import make_classification
+from sklearn.neighbors import NearestNeighbors
 
 def get_tail_label(df):
     """
@@ -21,7 +25,7 @@ def get_tail_label(df):
     for i in range(n):
         if irpl[i] > mir:
             tail_label.append(columns[i])
-        return tail_label
+    return tail_label
 
 def get_index(df):
     """
@@ -37,7 +41,7 @@ def get_index(df):
     for tail_label in tail_labels:
         sub_index = set(df[df[tail_label]==1].index)
         index = index.union(sub_index)
-        return list(index)
+    return list(index)
 
 
 def get_minority_instace(X, y):

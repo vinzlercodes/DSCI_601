@@ -12,6 +12,8 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn import svm
 from pprint import pprint
 from sklearn.neural_network import MLPClassifier
+from MLSOTE import *
+
 
 
 
@@ -28,7 +30,8 @@ def train_and_pickle(model, name, X_train, y_train):
     """
     model.fit(X_train, y_train)
     y_pred = model.predict(X_train)
-    print(classification_report(y_pred, y_train))
+    #print(classification_report(y_pred, y_train))
+    print('Done with the training ')
     with open('../models/' + name + '.pickle', 'wb') as f:
         pickle.dump(model, f)
 
@@ -42,15 +45,29 @@ if __name__ == "__main__":
     # Load data
     X_train = pd.read_csv(r'../MSR 2022/Train_Features.csv', index_col=0)
     y_train = pd.read_csv(r'../MSR 2022/Train_Labels.csv', index_col=0)
-    # perapare the classifiers with their parameters to be send to train_and_pickle
 
-    classifiers = [{'classifierName': 'MNB', 'classifier': MultinomialNB()}, {'classifierName': 'SVM', 'classifier': svm.SVC()},
+    #Getting minority instance of that datframe
+    X_sub, y_sub = get_minority_instace(X_train, y_train)
+    #Applying MLSMOTE to augment the dataframe
+    X_res,y_res =MLSMOTE(X_sub, y_sub, 1000)
+
+
+
+    # perapare the classifiers with their parameters to be send to train_and_pickle
+    classifiers = [{'classifierName': 'RandomForestClassifier', 'classifier':RandomForestClassifier(class_weight='balanced')}, {'classifierName': 'SVM', 'classifier': svm.SVC()},
     {'classifierName': 'LR', 'classifier': LogisticRegression()}]
     #classifiers = [{'classifierName': 'MLP', 'classifier': MLPClassifier(random_state=1, max_iter=300)}]
+
+
     # send the classifiers one by one using for loop
     for x in classifiers:
         print(x['classifierName'], x['classifier'])
         #pprint(x['classifier'].get_params())
         classifierChain = ClassifierChain(x['classifier'])
+
+        #before the data balancing
         train_and_pickle(classifierChain, x['classifierName'], X_train, y_train)
+
+        #with  data balancing MLSMOTE
+        #train_and_pickle(classifierChain, x['classifierName'], X_res, y_res)
         print((time.time() - start), 'sec')
