@@ -19,11 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="Add main MLSOMTE function , to create new balanced x and y">
+    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="complete the MLSMOTE">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MSR 2022/MLSOTE.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/MLSOTE.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -389,7 +386,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636919381956</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="complete the MLSMOTE">
+      <created>1636953222611</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1636953222613</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,7 +412,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test.py comments" />
     <MESSAGE value="create the file and set the with the MongoDb server" />
     <MESSAGE value="lookup for the refactoring type where commit_id in commit table =  _id i the refactoring table" />
     <MESSAGE value=" remove any instances where the size of the array is = 0 or has no input" />
@@ -433,7 +436,8 @@
     <MESSAGE value="Add MLSOMTE function , nearest_neighbour" />
     <MESSAGE value="Add main MLSOMTE function , to creare new balanced x and y" />
     <MESSAGE value="Add main MLSOMTE function , to create new balanced x and y" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add main MLSOMTE function , to create new balanced x and y" />
+    <MESSAGE value="complete the MLSMOTE" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete the MLSMOTE" />
   </component>
   <component name="WindowStateProjectService">
     <state x="421" y="208" key="#Notifications" timestamp="1631674717905">
@@ -476,10 +480,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="321" y="145" key="MultipleFileMergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1631674834417" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1636920072984">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1636953226248">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1636920072984" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1636953226248" />
     <state x="65" y="9" key="new project wizard" timestamp="1635284300955">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
