@@ -33,7 +33,7 @@ The data has been collected by the combined effort of 2 open-source tools, SATDB
 
 * The frequency of each class occuring:
 
-![Class Frequency](https://user-images.githubusercontent.com/34100245/116001557-fe159d80-a5c2-11eb-8e95-9b6be15dcfb9.png)
+![classes](https://user-images.githubusercontent.com/69842690/144768268-f18bc7e8-66ae-4ee8-8b3f-371a6efa7158.png)
 
 
 ## Models used
