@@ -21,6 +21,8 @@ The goal of the project is to support software developers in improving the quali
 * Python 3 (3.8+)
 * numpy (1.18.5)
 * pandas (1.0.5)
+* Matplotlib (2.2.4)
+* seaborn (0.11.0)
 * pickle ( 0.7.5)
 * scikit-learn (0.23.1)
 * natural language tool kit (3.5)
