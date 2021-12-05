@@ -24,10 +24,12 @@ The goal of the project is to support software developers in improving the quali
 * pickle ( 0.7.5)
 * scikit-learn (0.23.1)
 * natural language tool kit (3.5)
+* keras (2.4.0)
 
 ## Dataset
 
-The dataset for the project is curated towards the identification of refactoring labels for a given SATD/Non-SATD statement. The main columns of the data are the ‘Class’ and the ‘Text’ columns containing the refactoring labels and the refactoring needing comments, respectively. We will be working with 4 unique refactoring label clases. The dataset of 4009 rows with a unique instance of comments for each corresponding label. Hence, we have 2 learnable parameters to account for.  
+The data has been collected by the combined effort of 2 open-source tools, SATDBailiff and RefactoringMiner. The SATD-Bailiff program detects SATDs from method comments based on a machine learning model, then tracks the SATDs' span (from their occurrence to resolution). RefactoringMiner, is a Java library/API that detects refactorings applied to a Java project.The main columns of the data are the ‘resolution’, 'v1\_comment', 'v2\_comment' and 'refactoring\_type' columns containing the end result of the refactoring, the comment before refactoring, the comment after refactoring and the refactoring method itself, respectively. We will be working with 10 unique refactoring label classes. The data set of 14156 rows with a unique instance of comments for each corresponding label.
+.  
 
 * The frequency of each class occuring:
 
@@ -39,6 +41,35 @@ The dataset for the project is curated towards the identification of refactoring
 * Logistic Regression
 * Support Vector Machine (SVM)
 * Multi Nomial Naive Bayes (MNB)
+* Convolutional neural network (CNN)
+* Long short-term memory (LSTM)
+
+# Result
+\begin{table*}[ht]
+\resizebox{\textwidth}{0.70in}{%
+
+\centering
+\begin{tabular}{p{0.15\linewidth}p{0.15\linewidth}p{0.15\linewidth}p{0.15\linewidth}p{0.15\linewidth}p{0.15\linewidth}}
+\hline
+Model & F1 score & MLSMOTE & Accuracy &  MLSMOTE & Time \\
+\hline
+RF & \textbf{0.73} & 0.68 &0.46& 0.36 & 1.5 min  \\
+LR & 0.71 & 0.67 &0.40  & 0.30 & 9.21 min \\
+SVM & 0.66  & 0.65 &0.32 & 0.33 & 8.92 min \\
+MNB & 0.67  & 0.66  &0.35 & 0.29 & 1.2min\\
+MLP & \textbf{0.73} & 0.69 &0.46 & 0.34 & 33 min \\
+CNN & 0.62 &  0.61 &\textbf{0.73}& 0.70 &7.33 min\\
+LSTM & 0.61 & 0.60 &\textbf{0.71}& 0.71 \\
+
+\hline
+
+\end{tabular}
+%
+}
+       \vspace{0.80em}
+
+\caption{Result of the classification models}
+\end{table*}
 
 
 ## How to Run
