@@ -45,7 +45,6 @@ The data has been collected by the combined effort of 2 open-source tools, SATDB
 * Long short-term memory (LSTM)
 
 ## Result
---- | --- | --- | --- |--- |--- |
 Model | F1 score | MLSMOTE | Accuracy |  MLSMOTE | Time 
 
 RF | 0.73 | 0.68 |0.46| 0.36 | 1.5 min  
