@@ -5,7 +5,7 @@ import pickle
 import pandas as pd
 import time
 from sklearn.metrics import classification_report
-
+from sklearn.metrics import accuracy_score
 def unpickle_and_test(name,X_test,y_test):
     """
     This method uses the pickled classifiers wich is RandomForest,MNB,SVM,LR  in dir '../models..'
@@ -23,6 +23,7 @@ def unpickle_and_test(name,X_test,y_test):
     assert loaded_obj is not None
     y_pred = loaded_obj.predict(X_test)
     print(classification_report(y_pred,y_test))
+    print(accuracy_score(y_pred,y_test))
 
 if __name__ == '__main__':
     """
@@ -32,10 +33,9 @@ if __name__ == '__main__':
       """
 
     # Load data
-    X_test = pd.read_csv(r'../MSR 2022/Test_Features.csv',index_col=0)
-    y_test = pd.read_csv(r'../MSR 2022/Test_Labels.csv',index_col=0)
-    #classifiers = ['RandomForest', 'MNB','SVM','LR' ,'MLP']
-    classifiers = ['RandomForestClassifier']
+    X_test = pd.read_csv(r'../Data/Test_Features.csv', index_col=0)
+    y_test = pd.read_csv(r'../Data/Test_Labels.csv', index_col=0)
+    classifiers = ['MNB','LR','RF' ,'SVM','MLP']
     for x in classifiers:
         start = time.time()
         print(x)

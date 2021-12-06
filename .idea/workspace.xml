@@ -6,21 +6,36 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="complete the MLSMOTE">
+    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="Fix files and arrange the code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/FR-Dataset.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Preprocessed.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Preprocessed.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Test_Features.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Test_Features.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Test_labels.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Test_labels.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Train_Features.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Train_Features.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Train_Labels.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Train_Labels.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MSR 2022/DataPreparation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MSR 2022/Preprocessed22.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MSR 2022/Test_Features.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MSR 2022/Test_Labels.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MSR 2022/Train_Features.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MSR 2022/Train_Labels.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MSR 2022/sample_SATD25k.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MSR 2022/sample_SATD30k.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MSR 2022/sample_SATD30ktop-V2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MSR 2022/sample_SATD30ktop.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/LR.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/models/LR.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/MNB.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/models/MNB.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/RandomForest.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/RandomForestClassifier.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/SVM.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MLSOTE.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/MLSOTE.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,9 +86,31 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\GEM001\DSCI_601-1\src" />
+      <recent name="C:\Users\GEM001\DSCI_601-1\Data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.train">
+  <component name="RunManager" selected="Python.DataPreparation (1)">
+    <configuration name="س" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DSCI_601" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/س.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="DataPreparation (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DSCI_601" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -82,11 +119,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MSR 2022" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MSR 2022/DataPreparation.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/DataPreparation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -103,12 +140,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MSR 2022" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/DataPreparation.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\GEM001\DSCI_601-1\src\DataPreparation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -117,7 +153,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="extractData" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="MLSOTE" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DSCI_601" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -125,11 +161,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MSR 2022" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MSR 2022/extractData.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/MLSOTE.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -184,11 +220,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.train" />
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.DataPreparation (1)" />
-        <item itemvalue="Python.extractData" />
-        <item itemvalue="Python.DataPreparation" />
+        <item itemvalue="Python.DataPreparation (1)" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.train" />
+        <item itemvalue="Python.MLSOTE" />
       </list>
     </recent_temporary>
   </component>
@@ -393,7 +429,49 @@
       <option name="project" value="LOCAL" />
       <updated>1636953222613</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="add the new  cnn model">
+      <created>1637086049721</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1637086049723</updated>
+    </task>
+    <task id="LOCAL-00029" summary="add the new  cnn model exp2">
+      <created>1637086207175</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1637086207175</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Fix files">
+      <created>1638819630359</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1638819630359</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Fix files and arrange the code">
+      <created>1638819773969</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1638819773969</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Fix files and arrange the code">
+      <created>1638820050275</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1638820050275</updated>
+    </task>
+    <task id="LOCAL-00033" summary="fixup! Fix files">
+      <created>1638820398145</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1638820398145</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,7 +482,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -412,11 +496,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create the file and set the with the MongoDb server" />
-    <MESSAGE value="lookup for the refactoring type where commit_id in commit table =  _id i the refactoring table" />
-    <MESSAGE value=" remove any instances where the size of the array is = 0 or has no input" />
-    <MESSAGE value="the needed columns will be selected as a result from the previous query" />
-    <MESSAGE value="Description of the columns" />
     <MESSAGE value="convert the result from MongoDB to tabular format" />
     <MESSAGE value=" append all the columns in the array" />
     <MESSAGE value="save the data into csv file" />
@@ -437,41 +516,58 @@
     <MESSAGE value="Add main MLSOMTE function , to creare new balanced x and y" />
     <MESSAGE value="Add main MLSOMTE function , to create new balanced x and y" />
     <MESSAGE value="complete the MLSMOTE" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete the MLSMOTE" />
+    <MESSAGE value="add the new  cnn model" />
+    <MESSAGE value="add the new  cnn model exp2" />
+    <MESSAGE value="Fix files" />
+    <MESSAGE value="Fix files and arrange the code" />
+    <MESSAGE value="fixup! Fix files" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixup! Fix files" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="208" key="#Notifications" timestamp="1631674717905">
+    <state x="421" y="208" key="#Notifications" timestamp="1638820283586">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="421" y="208" key="#Notifications/0.0.1366.768@0.0.1366.768" timestamp="1631674717905" />
+    <state x="421" y="208" key="#Notifications/0.0.1366.768@0.0.1366.768" timestamp="1638820283586" />
+    <state x="412" y="186" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1638401650023">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="412" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1638401650023" />
     <state x="430" y="239" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1631674575152">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="430" y="239" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768@0.0.1366.768" timestamp="1631674575152" />
-    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1635284278202">
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1638820396856">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1635284278202" />
-    <state width="1323" height="212" key="GridCell.Tab.0.bottom" timestamp="1636941663945">
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1638820396856" />
+    <state x="129" y="59" key="DiffContextDialog" timestamp="1638820017995">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="129" y="59" key="DiffContextDialog/0.0.1366.768@0.0.1366.768" timestamp="1638820017995" />
+    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1637550740145">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1637550740145" />
+    <state width="660" height="232" key="GridCell.Tab.0.bottom" timestamp="1638820508590">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="981" height="275" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1024.768@1366.0.1024.768" timestamp="1635633094402" />
-    <state width="1323" height="212" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1636941663945" />
-    <state width="1323" height="212" key="GridCell.Tab.0.center" timestamp="1636941663944">
+    <state width="660" height="232" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1638820508590" />
+    <state width="660" height="232" key="GridCell.Tab.0.center" timestamp="1638820508589">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="981" height="275" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1024.768@1366.0.1024.768" timestamp="1635633094401" />
-    <state width="1323" height="212" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1636941663944" />
-    <state width="1323" height="212" key="GridCell.Tab.0.left" timestamp="1636941663943">
+    <state width="660" height="232" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1638820508589" />
+    <state width="660" height="232" key="GridCell.Tab.0.left" timestamp="1638820508589">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="981" height="275" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1024.768@1366.0.1024.768" timestamp="1635633094400" />
-    <state width="1323" height="212" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1636941663943" />
-    <state width="1323" height="212" key="GridCell.Tab.0.right" timestamp="1636941663945">
+    <state width="660" height="232" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1638820508589" />
+    <state width="660" height="232" key="GridCell.Tab.0.right" timestamp="1638820508589">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="981" height="275" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1024.768@1366.0.1024.768" timestamp="1635633094401" />
-    <state width="1323" height="212" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1636941663945" />
+    <state width="660" height="232" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1638820508589" />
     <state x="129" y="59" key="MergeDialog" timestamp="1631674834356">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -480,10 +576,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="321" y="145" key="MultipleFileMergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1631674834417" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1636953226248">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1638820405920">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1636953226248" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1638820405920" />
     <state x="65" y="9" key="new project wizard" timestamp="1635284300955">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
