@@ -2,7 +2,7 @@
 
 This repository is for the course Applied Data Science 2, for its final capstone documentation.
 
-# Description
+## Description
 
 Title: **Recommendation of Refactoring Techniques to address Self-Admitted Technical Debt**
 
