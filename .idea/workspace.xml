@@ -10,9 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="Fix files and arrange the code in src file">
-      <change afterPath="$PROJECT_DIR$/src/CNN.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tuning.py" afterDir="false" />
+    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="add tuning file + CNN">
+      <change afterPath="$PROJECT_DIR$/src/LSTM.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +66,7 @@
       <recent name="C:\Users\GEM001\DSCI_601-1\Data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Tuning">
+  <component name="RunManager" selected="Python.LSTM">
     <configuration name="س" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DSCI_601" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -131,6 +130,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="LSTM" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DSCI_601" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/LSTM.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Tuning" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DSCI_601" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -152,35 +172,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DSCI_601" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.LSTM" />
         <item itemvalue="Python.Tuning" />
         <item itemvalue="Python.CNN" />
         <item itemvalue="Python.DataPreparation (1)" />
         <item itemvalue="Python.DataPreparation (1)" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -441,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638838912596</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="add tuning file + CNN">
+      <created>1638854985110</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1638854985110</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +471,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" append all the columns in the array" />
     <MESSAGE value="save the data into csv file" />
     <MESSAGE value="heck if the row exists or not" />
     <MESSAGE value="check if the row exists or not" />
@@ -491,7 +495,8 @@
     <MESSAGE value="fixup! Fix files" />
     <MESSAGE value="Fix files and arrange the code" />
     <MESSAGE value="Fix files and arrange the code in src file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix files and arrange the code in src file" />
+    <MESSAGE value="add tuning file + CNN" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tuning file + CNN" />
   </component>
   <component name="WindowStateProjectService">
     <state x="421" y="208" key="#Notifications" timestamp="1638820283586">
@@ -518,26 +523,26 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1637550740145" />
-    <state width="1323" height="232" key="GridCell.Tab.0.bottom" timestamp="1638854670914">
+    <state width="1323" height="232" key="GridCell.Tab.0.bottom" timestamp="1638912242764">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="981" height="275" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1024.768@1366.0.1024.768" timestamp="1635633094402" />
-    <state width="1323" height="232" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1638854670914" />
-    <state width="1323" height="232" key="GridCell.Tab.0.center" timestamp="1638854670913">
+    <state width="1323" height="232" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1638912242764" />
+    <state width="1323" height="232" key="GridCell.Tab.0.center" timestamp="1638912242763">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="981" height="275" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1024.768@1366.0.1024.768" timestamp="1635633094401" />
-    <state width="1323" height="232" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1638854670913" />
-    <state width="1323" height="232" key="GridCell.Tab.0.left" timestamp="1638854670913">
+    <state width="1323" height="232" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1638912242763" />
+    <state width="1323" height="232" key="GridCell.Tab.0.left" timestamp="1638912242763">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="981" height="275" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1024.768@1366.0.1024.768" timestamp="1635633094400" />
-    <state width="1323" height="232" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1638854670913" />
-    <state width="1323" height="232" key="GridCell.Tab.0.right" timestamp="1638854670913">
+    <state width="1323" height="232" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1638912242763" />
+    <state width="1323" height="232" key="GridCell.Tab.0.right" timestamp="1638912242763">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="981" height="275" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1024.768@1366.0.1024.768" timestamp="1635633094401" />
-    <state width="1323" height="232" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1638854670913" />
+    <state width="1323" height="232" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1638912242763" />
     <state x="129" y="59" key="MergeDialog" timestamp="1631674834356">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -546,10 +551,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="321" y="145" key="MultipleFileMergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1631674834417" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1638839301330">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1638854995993">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1638839301330" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1638854995993" />
     <state x="65" y="9" key="new project wizard" timestamp="1635284300955">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
