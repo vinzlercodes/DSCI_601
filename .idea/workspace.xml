@@ -10,9 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="add tuning file + CNN">
-      <change afterPath="$PROJECT_DIR$/src/LSTM.py" afterDir="false" />
+    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="Add LSTM code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataPreparation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataPreparation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +55,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Downloads/homework15-hkeena98-main" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -446,7 +447,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638854985110</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Add LSTM code">
+      <created>1638913655551</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1638913655551</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,7 +479,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="save the data into csv file" />
     <MESSAGE value="heck if the row exists or not" />
     <MESSAGE value="check if the row exists or not" />
     <MESSAGE value="add and fix some comments" />
@@ -496,7 +503,8 @@
     <MESSAGE value="Fix files and arrange the code" />
     <MESSAGE value="Fix files and arrange the code in src file" />
     <MESSAGE value="add tuning file + CNN" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tuning file + CNN" />
+    <MESSAGE value="Add LSTM code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add LSTM code" />
   </component>
   <component name="WindowStateProjectService">
     <state x="421" y="208" key="#Notifications" timestamp="1638820283586">
@@ -519,30 +527,30 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="129" y="59" key="DiffContextDialog/0.0.1366.768@0.0.1366.768" timestamp="1638820017995" />
-    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1637550740145">
+    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1639001386456">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1637550740145" />
-    <state width="1323" height="232" key="GridCell.Tab.0.bottom" timestamp="1638912242764">
+    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1639001386456" />
+    <state width="1323" height="232" key="GridCell.Tab.0.bottom" timestamp="1638994493097">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="981" height="275" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1024.768@1366.0.1024.768" timestamp="1635633094402" />
-    <state width="1323" height="232" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1638912242764" />
-    <state width="1323" height="232" key="GridCell.Tab.0.center" timestamp="1638912242763">
+    <state width="1323" height="232" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1638994493097" />
+    <state width="1323" height="232" key="GridCell.Tab.0.center" timestamp="1638994493096">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="981" height="275" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1024.768@1366.0.1024.768" timestamp="1635633094401" />
-    <state width="1323" height="232" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1638912242763" />
-    <state width="1323" height="232" key="GridCell.Tab.0.left" timestamp="1638912242763">
+    <state width="1323" height="232" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1638994493096" />
+    <state width="1323" height="232" key="GridCell.Tab.0.left" timestamp="1638994493096">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="981" height="275" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1024.768@1366.0.1024.768" timestamp="1635633094400" />
-    <state width="1323" height="232" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1638912242763" />
-    <state width="1323" height="232" key="GridCell.Tab.0.right" timestamp="1638912242763">
+    <state width="1323" height="232" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1638994493096" />
+    <state width="1323" height="232" key="GridCell.Tab.0.right" timestamp="1638994493097">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="981" height="275" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1024.768@1366.0.1024.768" timestamp="1635633094401" />
-    <state width="1323" height="232" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1638912242763" />
+    <state width="1323" height="232" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1638994493097" />
     <state x="129" y="59" key="MergeDialog" timestamp="1631674834356">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -551,10 +559,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="321" y="145" key="MultipleFileMergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1631674834417" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1638854995993">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1638913660091">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1638854995993" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1638913660091" />
     <state x="65" y="9" key="new project wizard" timestamp="1635284300955">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
