@@ -38,13 +38,17 @@ def train_and_pickle(model, name, X_train, y_train):
 if __name__ == "__main__":
     """
     main method to use the split train data set and send it to train_and_pickle method with ml classifiers
-    to be trained and generate  the classification_report and lastly pickle the model
+    to be trained and generate  the classification_report and lastly pickle the model.
+    Also, there is an option to train the data set with MLSMOTE function for the data imbalance issue ,
+    just uncomment the line where MLSMOTE methods is called. 
+    
     """
     start = time.time()
     # Load data
     X_train = pd.read_csv(r'../Data/Train_Features.csv', index_col=0)
     y_train = pd.read_csv(r'../Data/Train_Labels.csv', index_col=0)
 
+    #Uncomment here to apply MLSOTE
     #Getting minority instance of that datframe
     #X_sub, y_sub = get_minority_instace(X_train, y_train)
     #Applying MLSMOTE to augment the dataframe
@@ -66,6 +70,6 @@ if __name__ == "__main__":
         #before the data balancing
         train_and_pickle(classifierChain, x['classifierName'], X_train, y_train)
 
-        #use this comment with  data balancing MLSMOTE
+        #use this comment with data balancing MLSMOTE
         #train_and_pickle(classifierChain, x['classifierName'], X_res, y_res)
         print((time.time() - start), 'sec')
