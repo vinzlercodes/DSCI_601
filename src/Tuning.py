@@ -9,6 +9,19 @@ from pprint import pprint
 
 
 def RandomizedSearch(X_train,y_train):
+    """
+        Random Search great approach for checking every value combination from a
+        predefined list and evaluating the result of each combination.
+        On the other hand ,the Random Search method tries random
+        combinations of a range of values to discover new hyper parameter
+        combinations to find the best parameter solution.We tuned the random forest model
+        since this model gave us the best F1 SCORE. We defined  a list pf random forest parameters
+        and let the RandomizedSearch iterate through them to find best score.
+
+    :param X_train:Train_Features
+    :param y_train:Train_labels
+    :return: list of the best parameters that achived the highest result.
+    """
 
     n_estimators = [int(x) for x in np.linspace(start = 200, stop = 2000, num = 10)]
     max_features = ['auto', 'sqrt']
@@ -36,6 +49,19 @@ def RandomizedSearch(X_train,y_train):
     print(rf_random.best_params_)
 
 def Gridsearch(X_train,y_train):
+    """
+    Grid search is a great approach for checking every value combination from a
+    predefined list and evaluating the result of each combination.
+    We have combined the two methods together to find the best
+    parameter that will enhance the predictions’ results. First, we
+    utilized a random search with a wide range of parameters.
+    Second, the best parameters found by the random search will
+    be used as an input to the Grid search. This approach helps
+    to reduce the execution time of the Grid search.
+    :param X_train:Train_Features
+    :param y_train:Train_labels
+    :return: list of the best parameters that achived the highest result.
+    """
 
     param_grid = {
             'bootstrap': [False],
@@ -57,6 +83,18 @@ def Gridsearch(X_train,y_train):
     print(grid_search.best_params_)
 
 def CustomTuning(X_train,y_train):
+    """
+    We have tried another solution to find
+    the best parameters for our two models that achieved the best
+    results random forest .We built our custom function which will
+    iterate through predefined parameter values of a specific model
+    and try every combination. The function will evaluate and
+    present the Accuracy, Recall, Precision, and F1 Scores metric
+    for each combination
+    :param X_train:Train_Features
+    :param y_train:Train_labels
+    :return: list of the best parameters that achived the highest result.
+    """
 
     max_features = ['auto', 'sqrt']
     bootstrap = [True, False]
@@ -89,6 +127,7 @@ if __name__ == "__main__":
     X_test = pd.read_csv(r'../Data/Test_Features.csv', index_col=0)
     y_test = pd.read_csv(r'../Data/Test_Labels.csv', index_col=0)
 
+    #pass the data to the one/all methods after retrived them from excel sheet
     #RandomizedSearch(X_train,y_train)
     #Gridsearch(X_train,y_train)
     CustomTuning(X_train,y_train)
