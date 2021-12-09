@@ -10,7 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="remove old docs" />
+    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="add pdf docs">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +53,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Downloads/homework15-hkeena98-main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Downloads/homework17-sxs2805-main" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -478,7 +480,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639018831420</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="add pdf docs">
+      <created>1639019997078</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1639019997078</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,7 +512,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add project name and project url to extracted data" />
     <MESSAGE value="add  commit hash" />
     <MESSAGE value="update pre process method" />
     <MESSAGE value="add new files" />
@@ -528,7 +536,8 @@
     <MESSAGE value="Add code doc using pdoc for CNN /LSTM" />
     <MESSAGE value="Add code doc for tuning" />
     <MESSAGE value="remove old docs" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove old docs" />
+    <MESSAGE value="add pdf docs" />
+    <option name="LAST_COMMIT_MESSAGE" value="add pdf docs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="421" y="208" key="#Notifications" timestamp="1638820283586">
@@ -551,10 +560,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="129" y="59" key="DiffContextDialog/0.0.1366.768@0.0.1366.768" timestamp="1638820017995" />
-    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1639001386456">
+    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1639082575801">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1639001386456" />
+    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1639082575801" />
     <state width="1323" height="232" key="GridCell.Tab.0.bottom" timestamp="1638994493097">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -583,10 +592,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="321" y="145" key="MultipleFileMergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1631674834417" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1639018838060">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1639020002724">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1639018838060" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1639020002723" />
     <state x="65" y="9" key="new project wizard" timestamp="1635284300955">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
