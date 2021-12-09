@@ -10,11 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="Add code doc using pdoc for CNN /LSTM">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tuning.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tuning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/train.py" afterDir="false" />
-    </list>
+    <list default="true" id="5bd942ab-0511-47bc-a666-4f97e91e3f64" name="Default Changelist" comment="remove old docs" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -468,7 +464,21 @@
       <option name="project" value="LOCAL" />
       <updated>1639007530939</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Add code doc for tuning">
+      <created>1639018690428</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1639018690428</updated>
+    </task>
+    <task id="LOCAL-00041" summary="remove old docs">
+      <created>1639018831420</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1639018831420</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,8 +503,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add and fix some comments" />
-    <MESSAGE value="some major changes m change the body of file , add mor functions , and create the parser" />
     <MESSAGE value="add project name and project url to extracted data" />
     <MESSAGE value="add  commit hash" />
     <MESSAGE value="update pre process method" />
@@ -518,7 +526,9 @@
     <MESSAGE value="Add LSTM code" />
     <MESSAGE value="Add code doc using pdoc" />
     <MESSAGE value="Add code doc using pdoc for CNN /LSTM" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add code doc using pdoc for CNN /LSTM" />
+    <MESSAGE value="Add code doc for tuning" />
+    <MESSAGE value="remove old docs" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove old docs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="421" y="208" key="#Notifications" timestamp="1638820283586">
@@ -573,10 +583,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="321" y="145" key="MultipleFileMergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1631674834417" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1639007535328">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1639018838060">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1639007535328" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1639018838060" />
     <state x="65" y="9" key="new project wizard" timestamp="1635284300955">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
